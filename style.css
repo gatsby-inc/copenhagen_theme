@@ -187,10 +187,10 @@ template {
 }
 
 body {
-  background-color: $background_color;
-  color: $text_color;
-  font-family: $text_font;
-  font-size: 15px;
+  background-color: #fff;
+  color: #635e69;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
@@ -203,7 +203,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $heading_font;
+  font-family: Futura PT, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   font-weight: 400;
   margin-top: 0;
 }
@@ -226,7 +226,7 @@ h4 {
 }
 
 a {
-  color: $link_color;
+  color: #663399;
   text-decoration: none;
 }
 
@@ -252,7 +252,7 @@ input:not([type="checkbox"]) {
 }
 
 input:not([type="checkbox"]):focus {
-  border: 1px solid $brand_color;
+  border: 1px solid #663399;
 }
 
 input[disabled] {
@@ -273,7 +273,7 @@ select {
 }
 
 select:focus {
-  border: 1px solid $brand_color;
+  border: 1px solid #663399;
 }
 
 select::-ms-expand {
@@ -290,7 +290,7 @@ textarea {
 }
 
 textarea:focus {
-  border: 1px solid $brand_color;
+  border: 1px solid #663399;
 }
 
 .container {
@@ -345,11 +345,11 @@ ul {
 }
 
 /***** Buttons *****/
-.button, .split-button button, .section-subscribe button, .article-subscribe button, .community-follow button, .requests-table-toolbar .organization-subscribe button, .subscriptions-subscribe button, .pagination-next-link, .pagination-prev-link, .pagination-first-link, .pagination-last-link {
+.button, .pagination-next-link, .pagination-prev-link, .pagination-first-link, .pagination-last-link, .subscriptions-subscribe button, .requests-table-toolbar .organization-subscribe button, .community-follow button, .article-subscribe button, .section-subscribe button, .split-button button {
   background-color: transparent;
-  border: 1px solid $brand_color;
+  border: 1px solid #663399;
   border-radius: 4px;
-  color: $brand_color;
+  color: #663399;
   cursor: pointer;
   display: inline-block;
   font-size: 12px;
@@ -365,32 +365,32 @@ ul {
 }
 
 @media (min-width: 768px) {
-  .button, .split-button button, .section-subscribe button, .article-subscribe button, .community-follow button, .requests-table-toolbar .organization-subscribe button, .subscriptions-subscribe button, .pagination-next-link, .pagination-prev-link, .pagination-first-link, .pagination-last-link {
+  .button, .pagination-next-link, .pagination-prev-link, .pagination-first-link, .pagination-last-link, .subscriptions-subscribe button, .requests-table-toolbar .organization-subscribe button, .community-follow button, .article-subscribe button, .section-subscribe button, .split-button button {
     width: auto;
   }
 }
 
-.button:hover, .split-button button:hover, .section-subscribe button:hover, .article-subscribe button:hover, .community-follow button:hover, .requests-table-toolbar .organization-subscribe button:hover, .subscriptions-subscribe button:hover, .pagination-next-link:hover, .pagination-prev-link:hover, .pagination-first-link:hover, .pagination-last-link:hover, .button:active, .split-button button:active, .section-subscribe button:active, .article-subscribe button:active, .community-follow button:active, .requests-table-toolbar .organization-subscribe button:active, .subscriptions-subscribe button:active, .pagination-next-link:active, .pagination-prev-link:active, .pagination-first-link:active, .pagination-last-link:active, .button:focus, .split-button button:focus, .section-subscribe button:focus, .article-subscribe button:focus, .community-follow button:focus, .requests-table-toolbar .organization-subscribe button:focus, .subscriptions-subscribe button:focus, .pagination-next-link:focus, .pagination-prev-link:focus, .pagination-first-link:focus, .pagination-last-link:focus, .button.button-primary, .split-button button.button-primary, .section-subscribe button.button-primary, .section-subscribe button[data-selected="true"], .article-subscribe button.button-primary, .article-subscribe button[data-selected="true"], .community-follow button.button-primary, .requests-table-toolbar .organization-subscribe button.button-primary, .requests-table-toolbar .organization-subscribe button[data-selected="true"], .subscriptions-subscribe button.button-primary, .subscriptions-subscribe button[data-selected="true"], .button-primary.pagination-next-link, .button-primary.pagination-prev-link, .button-primary.pagination-first-link, .button-primary.pagination-last-link {
-  background-color: $brand_color;
-  color: $brand_text_color;
+.button:hover, .pagination-next-link:hover, .pagination-prev-link:hover, .pagination-first-link:hover, .pagination-last-link:hover, .subscriptions-subscribe button:hover, .requests-table-toolbar .organization-subscribe button:hover, .community-follow button:hover, .article-subscribe button:hover, .section-subscribe button:hover, .split-button button:hover, .button:active, .pagination-next-link:active, .pagination-prev-link:active, .pagination-first-link:active, .pagination-last-link:active, .subscriptions-subscribe button:active, .requests-table-toolbar .organization-subscribe button:active, .community-follow button:active, .article-subscribe button:active, .section-subscribe button:active, .split-button button:active, .button:focus, .pagination-next-link:focus, .pagination-prev-link:focus, .pagination-first-link:focus, .pagination-last-link:focus, .subscriptions-subscribe button:focus, .requests-table-toolbar .organization-subscribe button:focus, .community-follow button:focus, .article-subscribe button:focus, .section-subscribe button:focus, .split-button button:focus, .button.button-primary, .button-primary.pagination-next-link, .button-primary.pagination-prev-link, .button-primary.pagination-first-link, .button-primary.pagination-last-link, .subscriptions-subscribe button.button-primary, .subscriptions-subscribe button[data-selected="true"], .requests-table-toolbar .organization-subscribe button.button-primary, .requests-table-toolbar .organization-subscribe button[data-selected="true"], .community-follow button.button-primary, .article-subscribe button.button-primary, .article-subscribe button[data-selected="true"], .section-subscribe button.button-primary, .section-subscribe button[data-selected="true"], .split-button button.button-primary {
+  background-color: #663399;
+  color: #fff;
   text-decoration: none;
 }
 
-.button.button-primary:hover, .split-button button:hover, .section-subscribe button.button-primary:hover, .section-subscribe button[data-selected="true"]:hover, .article-subscribe button.button-primary:hover, .article-subscribe button[data-selected="true"]:hover, .community-follow button.button-primary:hover, .requests-table-toolbar .organization-subscribe button.button-primary:hover, .requests-table-toolbar .organization-subscribe button[data-selected="true"]:hover, .subscriptions-subscribe button.button-primary:hover, .subscriptions-subscribe button[data-selected="true"]:hover, .button-primary.pagination-next-link:hover, .button-primary.pagination-prev-link:hover, .button-primary.pagination-first-link:hover, .button-primary.pagination-last-link:hover, .button.button-primary:focus, .split-button button.button-primary:focus, .section-subscribe button.button-primary:focus, .section-subscribe button[data-selected="true"]:focus, .article-subscribe button.button-primary:focus, .article-subscribe button[data-selected="true"]:focus, .community-follow button.button-primary:focus, .requests-table-toolbar .organization-subscribe button.button-primary:focus, .requests-table-toolbar .organization-subscribe button[data-selected="true"]:focus, .subscriptions-subscribe button.button-primary:focus, .subscriptions-subscribe button[data-selected="true"]:focus, .button-primary.pagination-next-link:focus, .button-primary.pagination-prev-link:focus, .button-primary.pagination-first-link:focus, .button-primary.pagination-last-link:focus, .button.button-primary:active, .split-button button.button-primary:active, .section-subscribe button.button-primary:active, .section-subscribe button[data-selected="true"]:active, .article-subscribe button.button-primary:active, .article-subscribe button[data-selected="true"]:active, .community-follow button.button-primary:active, .requests-table-toolbar .organization-subscribe button.button-primary:active, .requests-table-toolbar .organization-subscribe button[data-selected="true"]:active, .subscriptions-subscribe button.button-primary:active, .subscriptions-subscribe button[data-selected="true"]:active, .button-primary.pagination-next-link:active, .button-primary.pagination-prev-link:active, .button-primary.pagination-first-link:active, .button-primary.pagination-last-link:active {
-  background-color: darken($brand_color, 20%);
-  border-color: darken($brand_color, 20%);
+.button.button-primary:hover, .button-primary.pagination-next-link:hover, .button-primary.pagination-prev-link:hover, .button-primary.pagination-first-link:hover, .button-primary.pagination-last-link:hover, .subscriptions-subscribe button.button-primary:hover, .subscriptions-subscribe button[data-selected="true"]:hover, .requests-table-toolbar .organization-subscribe button.button-primary:hover, .requests-table-toolbar .organization-subscribe button[data-selected="true"]:hover, .community-follow button.button-primary:hover, .article-subscribe button.button-primary:hover, .article-subscribe button[data-selected="true"]:hover, .section-subscribe button.button-primary:hover, .section-subscribe button[data-selected="true"]:hover, .split-button button:hover, .button.button-primary:focus, .button-primary.pagination-next-link:focus, .button-primary.pagination-prev-link:focus, .button-primary.pagination-first-link:focus, .button-primary.pagination-last-link:focus, .subscriptions-subscribe button.button-primary:focus, .subscriptions-subscribe button[data-selected="true"]:focus, .requests-table-toolbar .organization-subscribe button.button-primary:focus, .requests-table-toolbar .organization-subscribe button[data-selected="true"]:focus, .community-follow button.button-primary:focus, .article-subscribe button.button-primary:focus, .article-subscribe button[data-selected="true"]:focus, .section-subscribe button.button-primary:focus, .section-subscribe button[data-selected="true"]:focus, .split-button button.button-primary:focus, .button.button-primary:active, .button-primary.pagination-next-link:active, .button-primary.pagination-prev-link:active, .button-primary.pagination-first-link:active, .button-primary.pagination-last-link:active, .subscriptions-subscribe button.button-primary:active, .subscriptions-subscribe button[data-selected="true"]:active, .requests-table-toolbar .organization-subscribe button.button-primary:active, .requests-table-toolbar .organization-subscribe button[data-selected="true"]:active, .community-follow button.button-primary:active, .article-subscribe button.button-primary:active, .article-subscribe button[data-selected="true"]:active, .section-subscribe button.button-primary:active, .section-subscribe button[data-selected="true"]:active, .split-button button.button-primary:active {
+  background-color: darken(#663399, 20%);
+  border-color: darken(#663399, 20%);
 }
 
-.button[data-disabled], .split-button button[data-disabled], .section-subscribe button[data-disabled], .article-subscribe button[data-disabled], .community-follow button[data-disabled], .requests-table-toolbar .organization-subscribe button[data-disabled], .subscriptions-subscribe button[data-disabled], [data-disabled].pagination-next-link, [data-disabled].pagination-prev-link, [data-disabled].pagination-first-link, [data-disabled].pagination-last-link {
+.button[data-disabled], .pagination-next-link[data-disabled], .pagination-prev-link[data-disabled], .pagination-first-link[data-disabled], .pagination-last-link[data-disabled], .subscriptions-subscribe button[data-disabled], .requests-table-toolbar .organization-subscribe button[data-disabled], .community-follow button[data-disabled], .article-subscribe button[data-disabled], .section-subscribe button[data-disabled], .split-button button[data-disabled] {
   cursor: default;
 }
 
 .button-large, input[type="submit"] {
   cursor: pointer;
-  background-color: $brand_color;
+  background-color: #663399;
   border: 0;
   border-radius: 4px;
-  color: $brand_text_color;
+  color: #fff;
   font-size: 14px;
   font-weight: 400;
   line-height: 2.72;
@@ -405,8 +405,8 @@ ul {
   }
 }
 
-.button-large:hover, .button-large:active, .button-large:focus, input[type="submit"]:hover, input[type="submit"]:active, input[type="submit"]:focus {
-  background-color: darken($brand_color, 20%);
+.button-large:hover, .split-button button.button-large:hover, .button-large:active, .button-large:focus, input[type="submit"]:hover, .split-button button[type="submit"]:hover, input[type="submit"]:active, input[type="submit"]:focus {
+  background-color: darken(#663399, 20%);
 }
 
 .button-large[disabled], input[type="submit"][disabled] {
@@ -414,15 +414,15 @@ ul {
 }
 
 .button-secondary {
-  color: lighten($text_color, 20%);
+  color: lighten(#635e69, 20%);
   border: 1px solid #ddd;
   background-color: transparent;
 }
 
-.button-secondary:hover, .button-secondary:focus, .button-secondary:active {
-  color: $text_color;
+.button-secondary:hover, .split-button button.button-secondary:hover, .button-secondary:focus, .button-secondary:active {
+  color: #635e69;
   border: 1px solid #ddd;
-  background-color: darken($background_color, 3%);
+  background-color: darken(#fff, 3%);
 }
 
 /***** Split button *****/
@@ -431,22 +431,22 @@ ul {
 }
 
 .split-button button {
-  background-color: $brand_color;
+  background-color: #663399;
   border: 0;
-  color: $brand_text_color;
+  color: #fff;
   height: 32px;
   line-height: 16px;
-  outline-color: $brand_color;
+  outline-color: #663399;
 }
 
 [dir="rtl"] .split-button button:not(:only-child):first-child {
-  border-left: 1px solid $brand_text_color;
+  border-left: 1px solid #fff;
   border-top-left-radius: unset;
   border-bottom-left-radius: unset;
 }
 
 [dir="ltr"] .split-button button:not(:only-child):first-child {
-  border-right: 1px solid $brand_text_color;
+  border-right: 1px solid #fff;
   border-top-right-radius: unset;
   border-bottom-right-radius: unset;
 }
@@ -487,14 +487,13 @@ ul {
 
 .table th,
 .table th a {
-  color: lighten($text_color, 20%);
-  font-size: 13px;
+  color: lighten(#635e69, 20%);
+  font-size: 0.875rem;
   font-weight: 300;
   text-align: left;
 }
 
-[dir="rtl"] .table th, [dir="rtl"]
-.table th a {
+[dir="rtl"] .table th, [dir="rtl"] .table th a {
   text-align: right;
 }
 
@@ -544,7 +543,7 @@ ul {
 
 .form-field label {
   display: block;
-  font-size: 13px;
+  font-size: 0.875rem;
   margin-bottom: 5px;
 }
 
@@ -556,7 +555,7 @@ ul {
 }
 
 .form-field input:focus {
-  border: 1px solid $brand_color;
+  border: 1px solid #663399;
 }
 
 .form-field input[type="text"] {
@@ -565,7 +564,7 @@ ul {
 }
 
 .form-field input[type="text"]:focus {
-  border: 1px solid $brand_color;
+  border: 1px solid #663399;
 }
 
 .form-field input[type="checkbox"] {
@@ -581,13 +580,13 @@ ul {
 }
 
 .form-field .nesty-input:focus {
-  border: 1px solid $brand_color;
+  border: 1px solid #663399;
   text-decoration: none;
 }
 
 .form-field .hc-multiselect-toggle:focus {
   outline: none;
-  border: 1px solid $brand_color;
+  border: 1px solid #663399;
   text-decoration: none;
 }
 
@@ -600,12 +599,12 @@ ul {
 }
 
 .form-field .optional {
-  color: lighten($text_color, 20%);
+  color: lighten(#635e69, 20%);
   margin-left: 4px;
 }
 
 .form-field p {
-  color: lighten($text_color, 20%);
+  color: lighten(#635e69, 20%);
   font-size: 12px;
   margin: 5px 0;
 }
@@ -616,13 +615,13 @@ ul {
 }
 
 .form footer a {
-  color: lighten($text_color, 20%);
+  color: lighten(#635e69, 20%);
   cursor: pointer;
   margin-right: 15px;
 }
 
 .form .suggestion-list {
-  font-size: 13px;
+  font-size: 0.875rem;
   margin-top: 30px;
 }
 
@@ -637,7 +636,7 @@ ul {
 }
 
 .form .suggestion-list li a:visited {
-  color: darken($link_color, 20%);
+  color: darken(#663399, 20%);
 }
 
 /***** Header *****/
@@ -692,7 +691,7 @@ ul {
 
 .nav-wrapper a {
   border: 0;
-  color: $link_color;
+  color: #663399;
   display: none;
   font-size: 14px;
   padding: 0 20px 0 0;
@@ -711,7 +710,7 @@ ul {
 
 .nav-wrapper a:hover, .nav-wrapper a:focus, .nav-wrapper a:active {
   background-color: transparent;
-  color: $link_color;
+  color: #663399;
   text-decoration: underline;
 }
 
@@ -738,7 +737,7 @@ ul {
 .nav-wrapper .menu-button {
   background: none;
   border: 0;
-  color: $link_color;
+  color: #663399;
   display: inline-block;
   margin-right: 10px;
   padding: 0;
@@ -764,7 +763,7 @@ ul {
 
 .nav-wrapper .menu-button:hover, .nav-wrapper .menu-button:focus, .nav-wrapper .menu-button:active {
   background-color: transparent;
-  color: $link_color;
+  color: #663399;
 }
 
 .skip-navigation {
@@ -819,19 +818,19 @@ ul {
 
 .user-info > button {
   border: 0;
-  color: $link_color;
+  color: #663399;
   min-width: 0;
   padding: 0;
   white-space: nowrap;
 }
 
-.user-info > button:hover, .user-info > button:focus {
-  color: $link_color;
+.user-info > button:hover, .split-button .user-info > button:hover, .user-info > button:focus {
+  color: #663399;
   background-color: transparent;
 }
 
 .user-info > button::after {
-  color: $link_color;
+  color: #663399;
   padding-right: 15px;
 }
 
@@ -875,11 +874,11 @@ ul {
 }
 
 .avatar .icon-agent {
-  color: $brand_color;
+  color: #663399;
   border: 2px solid #fff;
   border-radius: 50%;
   bottom: -4px;
-  background-color: $brand_text_color;
+  background-color: #fff;
   font-size: 17px;
   height: 17px;
   line-height: 17px;
@@ -897,7 +896,7 @@ ul {
 }
 
 .footer a {
-  color: lighten($text_color, 20%);
+  color: lighten(#635e69, 20%);
 }
 
 .footer-inner {
@@ -916,7 +915,7 @@ ul {
 }
 
 .footer-language-selector {
-  color: lighten($text_color, 20%);
+  color: lighten(#635e69, 20%);
   display: inline-block;
   font-weight: 300;
 }
@@ -934,22 +933,22 @@ ul {
 }
 
 .breadcrumbs li {
-  color: lighten($text_color, 20%);
+  color: lighten(#635e69, 20%);
   display: inline;
   font-weight: 300;
-  font-size: 13px;
+  font-size: 0.875rem;
   max-width: 450px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.breadcrumbs li + li::before {
+.breadcrumbs li + li::before, .breadcrumbs li + li.notification-inline.notification-error::before {
   content: ">";
   margin: 0 4px;
 }
 
 .breadcrumbs li a:visited {
-  color: $link_color;
+  color: #663399;
 }
 
 /***** Search field *****/
@@ -962,7 +961,7 @@ ul {
   border-radius: 30px;
   box-sizing: border-box;
   color: #666;
-  height: 40px;
+  height: 50px;
   padding-left: 40px;
   padding-right: 20px;
   -webkit-appearance: none;
@@ -975,7 +974,7 @@ ul {
 }
 
 .search input[type="search"]:focus {
-  border: 1px solid $brand_color;
+  border: 1px solid #663399;
   color: #555;
 }
 
@@ -1099,7 +1098,7 @@ ul {
 }
 
 .sub-nav input[type="search"]::after {
-  font-size: 15px;
+  font-size: 1rem;
 }
 
 /***** Blocks *****/
@@ -1119,10 +1118,10 @@ ul {
 }
 
 .blocks-item {
-  border: 1px solid $brand_color;
+  border: 1px solid #663399;
   border-radius: 4px;
   box-sizing: border-box;
-  color: $brand_color;
+  color: #663399;
   display: flex;
   flex: 1 0 340px;
   margin: 0 0 30px;
@@ -1136,12 +1135,12 @@ ul {
   }
 }
 
-.blocks-item:hover, .blocks-item:focus, .blocks-item:active {
-  background-color: $brand_color;
+.blocks-item:hover, .split-button button.blocks-item:hover, .blocks-item:focus, .blocks-item:active {
+  background-color: #663399;
 }
 
-.blocks-item:hover *, .blocks-item:focus *, .blocks-item:active * {
-  color: $brand_text_color;
+.blocks-item:hover *, .split-button button.blocks-item:hover *, .blocks-item:focus *, .blocks-item:active * {
+  color: #fff;
   text-decoration: none;
 }
 
@@ -1158,11 +1157,11 @@ ul {
 }
 
 .blocks-item-internal a {
-  color: $text_color;
+  color: #635e69;
 }
 
 .blocks-item-link {
-  color: $brand_color;
+  color: #663399;
   padding: 20px 30px;
   display: flex;
   flex-direction: column;
@@ -1171,13 +1170,13 @@ ul {
   border-radius: inherit;
 }
 
-.blocks-item-link:hover, .blocks-item-link:active {
+.blocks-item-link:hover, .split-button button.blocks-item-link:hover, .blocks-item-link:active {
   text-decoration: none;
 }
 
 .blocks-item-link:focus {
   outline: 0;
-  box-shadow: 0 0 0 3px $brand_color;
+  box-shadow: 0 0 0 3px #663399;
   text-decoration: none;
 }
 
@@ -1249,7 +1248,7 @@ ul {
   display: block;
   border-bottom: 1px solid #ddd;
   padding: 15px 0;
-  color: $text_color;
+  color: #635e69;
 }
 
 .promoted-articles-item .icon-lock {
@@ -1302,12 +1301,12 @@ ul {
 }
 
 .recent-activity-item-parent {
-  font-size: 16px;
+  font-size: 1.125rem;
 }
 
 .recent-activity-item-parent, .recent-activity-item-link {
   margin: 6px 0;
-  color: $text_color;
+  color: #635e69;
   display: inline-block;
   width: 100%;
 }
@@ -1340,9 +1339,9 @@ ul {
 }
 
 .recent-activity-item-time, .recent-activity-item-comment {
-  color: lighten($text_color, 20%);
+  color: lighten(#635e69, 20%);
   display: inline-block;
-  font-size: 13px;
+  font-size: 0.875rem;
   font-weight: 300;
 }
 
@@ -1354,7 +1353,7 @@ ul {
   padding: 0 5px 0 0;
 }
 
-.recent-activity-item-comment::before {
+.recent-activity-item-comment::before, .recent-activity-item-comment.notification-inline.notification-error::before {
   display: inline-block;
 }
 
@@ -1378,7 +1377,7 @@ ul {
 
 .recent-activity-comment-icon svg {
   vertical-align: middle;
-  color: $brand_color;
+  color: #663399;
   width: 16px;
   height: 16px;
 }
@@ -1440,7 +1439,7 @@ ul {
 }
 
 .section-tree-title a {
-  color: $text_color;
+  color: #635e69;
 }
 
 .section-tree .see-all-articles {
@@ -1449,16 +1448,16 @@ ul {
 }
 
 .article-list-item {
-  font-size: 16px;
+  font-size: 1.125rem;
   padding: 15px 0;
 }
 
 .article-list-item a {
-  color: $text_color;
+  color: #635e69;
 }
 
 .icon-star {
-  color: $brand_color;
+  color: #663399;
   font-size: 18px;
 }
 
@@ -1488,7 +1487,7 @@ ul {
 
 .section-list-item {
   border-bottom: 1px solid #ddd;
-  font-size: 16px;
+  font-size: 1.125rem;
   padding: 15px 0;
 }
 
@@ -1498,7 +1497,7 @@ ul {
 
 .section-list-item a {
   align-items: center;
-  color: $text_color;
+  color: #635e69;
   display: flex;
   justify-content: space-between;
 }
@@ -1630,11 +1629,11 @@ ul {
 }
 
 .article-body a:visited {
-  color: darken($link_color, 20%);
+  color: darken(#663399, 20%);
 }
 
 .article-body code {
-  background: darken($background_color, 3%);
+  background: darken(#fff, 3%);
   border: 1px solid #ddd;
   border-radius: 3px;
   padding: 0 5px;
@@ -1642,7 +1641,7 @@ ul {
 }
 
 .article-body pre {
-  background: darken($background_color, 3%);
+  background: darken(#fff, 3%);
   border: 1px solid #ddd;
   border-radius: 3px;
   padding: 10px 15px;
@@ -1652,7 +1651,7 @@ ul {
 
 .article-body blockquote {
   border-left: 1px solid #ddd;
-  color: lighten($text_color, 20%);
+  color: lighten(#635e69, 20%);
   font-style: italic;
   padding: 0 15px;
 }
@@ -1675,17 +1674,17 @@ ul {
 }
 
 .article-comment-count {
-  color: lighten($text_color, 20%);
+  color: lighten(#635e69, 20%);
   font-weight: 300;
 }
 
-.article-comment-count:hover {
+.article-comment-count:hover, .split-button button.article-comment-count:hover {
   text-decoration: none;
 }
 
 .article-comment-count-icon {
   vertical-align: middle;
-  color: $brand_color;
+  color: #663399;
   width: 18px;
   height: 18px;
 }
@@ -1764,7 +1763,7 @@ ul {
 }
 
 .article-return-to-top a {
-  color: $text_color;
+  color: #635e69;
   display: block;
   padding: 20px 0;
 }
@@ -1778,23 +1777,23 @@ ul {
 }
 
 .sidenav-title {
-  font-size: 15px;
+  font-size: 1rem;
   position: relative;
   font-weight: 600;
 }
 
 .sidenav-item {
   border-radius: 4px;
-  color: $text_color;
+  color: #635e69;
   display: block;
   font-weight: 300;
   margin-bottom: 10px;
   padding: 10px;
 }
 
-.sidenav-item.current-article, .sidenav-item:hover {
-  background-color: $brand_color;
-  color: $brand_text_color;
+.sidenav-item.current-article, .sidenav-item:hover, .split-button button.sidenav-item:hover {
+  background-color: #663399;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -1816,7 +1815,7 @@ ul {
 }
 
 .attachments .attachment-item .attachment-icon {
-  color: $text_color;
+  color: #635e69;
   left: 0;
   position: absolute;
   top: 5px;
@@ -1833,7 +1832,7 @@ ul {
 }
 
 .upload-dropzone span {
-  color: lighten($text_color, 20%);
+  color: lighten(#635e69, 20%);
 }
 
 /***** Social share links *****/
@@ -1852,12 +1851,12 @@ ul {
 }
 
 .share a {
-  color: lighten($text_color, 20%);
+  color: lighten(#635e69, 20%);
 }
 
 .share a:hover {
   text-decoration: none;
-  color: $brand_color;
+  color: #663399;
 }
 
 .share a svg {
@@ -1892,15 +1891,15 @@ ul {
 }
 
 .comment-callout {
-  color: lighten($text_color, 20%);
+  color: lighten(#635e69, 20%);
   display: inline-block;
   font-weight: 300;
-  font-size: 13px;
+  font-size: 0.875rem;
   margin-bottom: 0;
 }
 
 .comment-callout a {
-  color: $brand_color;
+  color: #663399;
 }
 
 .comment-sorter {
@@ -1909,9 +1908,9 @@ ul {
 }
 
 .comment-sorter .dropdown-toggle {
-  color: lighten($text_color, 20%);
+  color: lighten(#635e69, 20%);
   font-weight: 300;
-  font-size: 13px;
+  font-size: 0.875rem;
 }
 
 [dir="rtl"] .comment-sorter {
@@ -1924,7 +1923,7 @@ ul {
 }
 
 .comment-wrapper.comment-official {
-  border: 1px solid $brand_color;
+  border: 1px solid #663399;
   padding: 40px 20px 20px;
 }
 
@@ -2048,7 +2047,7 @@ ul {
 }
 
 .comment-attachments a {
-  color: $brand_color;
+  color: #663399;
 }
 
 .comment-body {
@@ -2057,7 +2056,7 @@ ul {
   -webkit-hyphens: auto;
   word-break: break-word;
   word-wrap: break-word;
-  font-family: $text_font;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   line-height: 1.6;
   overflow-x: auto;
 }
@@ -2089,11 +2088,11 @@ ul {
 }
 
 .comment-body a:visited {
-  color: darken($link_color, 20%);
+  color: darken(#663399, 20%);
 }
 
 .comment-body code {
-  background: darken($background_color, 3%);
+  background: darken(#fff, 3%);
   border: 1px solid #ddd;
   border-radius: 3px;
   padding: 0 5px;
@@ -2101,7 +2100,7 @@ ul {
 }
 
 .comment-body pre {
-  background: darken($background_color, 3%);
+  background: darken(#fff, 3%);
   border: 1px solid #ddd;
   border-radius: 3px;
   padding: 10px 15px;
@@ -2111,7 +2110,7 @@ ul {
 
 .comment-body blockquote {
   border-left: 1px solid #ddd;
-  color: lighten($text_color, 20%);
+  color: lighten(#635e69, 20%);
   font-style: italic;
   padding: 0 15px;
 }
@@ -2133,7 +2132,7 @@ ul {
 }
 
 .vote-sum {
-  color: lighten($text_color, 20%);
+  color: lighten(#635e69, 20%);
   display: block;
   margin: 3px 0;
 }
@@ -2147,9 +2146,10 @@ ul {
   transform: scale(1, -1);
 }
 
-.vote-up:hover,
-.vote-down:hover {
-  color: $brand_color;
+.vote-up:hover, .split-button button.vote-up:hover,
+.vote-down:hover,
+.split-button button.vote-down:hover {
+  color: #663399;
 }
 
 .vote-up, .vote-down {
@@ -2158,7 +2158,7 @@ ul {
   appearance: none;
   background-color: transparent;
   border: none;
-  color: lighten($text_color, 20%);
+  color: lighten(#635e69, 20%);
   cursor: pointer;
   min-height: 35px;
   min-width: 35px;
@@ -2168,11 +2168,11 @@ ul {
 }
 
 .vote-voted {
-  color: $brand_color;
+  color: #663399;
 }
 
-.vote-voted:hover {
-  color: darken($brand_color, 20%);
+.vote-voted:hover, .split-button button.vote-voted:hover {
+  color: darken(#663399, 20%);
 }
 
 /***** Actions *****/
@@ -2256,7 +2256,7 @@ ul {
 /* Community topic page */
 .topic-header {
   border-bottom: 1px solid #ddd;
-  font-size: 13px;
+  font-size: 0.875rem;
 }
 
 @media (min-width: 768px) {
@@ -2312,35 +2312,35 @@ ul {
 }
 
 .community-follow button:hover {
-  background-color: $brand_color;
+  background-color: #663399;
 }
 
 .community-follow button:hover::after, .community-follow button:focus::after {
-  border-color: $brand_text_color;
-  color: $brand_text_color;
+  border-color: #fff;
+  color: #fff;
 }
 
 .community-follow button[data-selected="true"] {
-  background-color: $brand_color;
-  color: $brand_text_color;
+  background-color: #663399;
+  color: #fff;
 }
 
 .community-follow button[data-selected="true"]::after {
-  border-left: 1px solid $brand_text_color;
-  color: $brand_text_color;
+  border-left: 1px solid #fff;
+  color: #fff;
 }
 
 .community-follow button[data-selected="true"]:hover {
-  background-color: darken($brand_color, 20%);
-  border-color: darken($brand_color, 20%);
+  background-color: darken(#663399, 20%);
+  border-color: darken(#663399, 20%);
 }
 
 .community-follow button::after {
-  border-left: 1px solid $brand_color;
+  border-left: 1px solid #663399;
   content: attr(data-follower-count);
-  color: $brand_color;
+  color: #663399;
   display: inline-block;
-  font-family: $heading_font;
+  font-family: Futura PT, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   margin-left: 15px;
   padding-left: 10px;
   position: absolute;
@@ -2355,7 +2355,7 @@ ul {
 
 [dir="rtl"] .community-follow button::after {
   border-left: 0;
-  border-right: 1px solid $brand_color;
+  border-right: 1px solid #663399;
   margin: 0 10px 0 0;
   padding: 0 10px 0 0;
 }
@@ -2387,17 +2387,17 @@ ul {
 }
 
 .striped-list-title {
-  color: $link_color;
+  color: #663399;
   margin-bottom: 10px;
   margin-right: 5px;
 }
 
-.striped-list-title:hover, .striped-list-title:focus, .striped-list-title:active {
+.striped-list-title:hover, .split-button button.striped-list-title:hover, .striped-list-title:focus, .striped-list-title:active {
   text-decoration: underline;
 }
 
 .striped-list-title:visited {
-  color: darken($link_color, 20%);
+  color: darken(#663399, 20%);
 }
 
 .striped-list .meta-group {
@@ -2405,9 +2405,9 @@ ul {
 }
 
 .striped-list-count {
-  color: lighten($text_color, 20%);
+  color: lighten(#635e69, 20%);
   font-weight: 300;
-  font-size: 13px;
+  font-size: 0.875rem;
   justify-content: flex-start;
   text-transform: capitalize;
 }
@@ -2443,7 +2443,7 @@ ul {
 
 @media (min-width: 768px) {
   .striped-list-number {
-    color: $text_color;
+    color: #635e69;
     display: block;
     font-weight: 400;
   }
@@ -2464,12 +2464,12 @@ ul {
   display: inline-block;
 }
 
-.status-label:hover, .status-label:active, .status-label:focus {
+.status-label:hover, .split-button button.status-label:hover, .status-label:active, .status-label:focus {
   text-decoration: none;
 }
 
 .status-label-pinned, .status-label-featured, .status-label-official {
-  background-color: $brand_color;
+  background-color: #663399;
 }
 
 .status-label-official {
@@ -2497,7 +2497,7 @@ ul {
 
 .status-label-not-planned, .status-label-closed {
   background-color: #e9ebed;
-  color: lighten($text_color, 20%);
+  color: lighten(#635e69, 20%);
 }
 
 .status-label-pending, .status-label-pending-moderation {
@@ -2608,7 +2608,7 @@ ul {
 }
 
 .post-content {
-  font-family: $text_font;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   line-height: 1.6;
   word-break: break-word;
 }
@@ -2668,11 +2668,11 @@ ul {
 }
 
 .post-body a:visited {
-  color: darken($link_color, 20%);
+  color: darken(#663399, 20%);
 }
 
 .post-body code {
-  background: darken($background_color, 3%);
+  background: darken(#fff, 3%);
   border: 1px solid #ddd;
   border-radius: 3px;
   padding: 0 5px;
@@ -2680,7 +2680,7 @@ ul {
 }
 
 .post-body pre {
-  background: darken($background_color, 3%);
+  background: darken(#fff, 3%);
   border: 1px solid #ddd;
   border-radius: 3px;
   padding: 10px 15px;
@@ -2690,7 +2690,7 @@ ul {
 
 .post-body blockquote {
   border-left: 1px solid #ddd;
-  color: lighten($text_color, 20%);
+  color: lighten(#635e69, 20%);
   font-style: italic;
   padding: 0 15px;
 }
@@ -2703,16 +2703,16 @@ ul {
 }
 
 .post-comment-count {
-  color: lighten($text_color, 20%);
+  color: lighten(#635e69, 20%);
   font-weight: 300;
 }
 
-.post-comment-count:hover {
+.post-comment-count:hover, .split-button button.post-comment-count:hover {
   text-decoration: none;
 }
 
 .post-comment-count .icon-comments {
-  color: $brand_color;
+  color: #663399;
   display: inline-block;
   width: 18px;
   height: 18px;
@@ -2801,7 +2801,7 @@ ul {
 /* Navigation element that collapses on mobile */
 .collapsible-nav {
   flex-direction: column;
-  font-size: 14px;
+  font-size: 1rem;
   position: relative;
 }
 
@@ -2860,7 +2860,7 @@ ul {
 
 .collapsible-nav-toggle:focus {
   outline: none;
-  border: 1px solid $brand_color;
+  border: 1px solid #663399;
 }
 
 .collapsible-nav-list {
@@ -2875,7 +2875,7 @@ ul {
 }
 
 .collapsible-nav-list li {
-  color: $text_color;
+  color: #635e69;
   line-height: 45px;
   order: 1;
 }
@@ -2896,7 +2896,7 @@ ul {
 }
 
 .collapsible-nav-list li a {
-  color: $text_color;
+  color: #635e69;
   display: block;
 }
 
@@ -2917,7 +2917,7 @@ ul {
 
 @media (min-width: 768px) {
   .collapsible-nav-list li:not([aria-selected="true"]),
-  .collapsible-nav-list li:not(.current) {
+.collapsible-nav-list li:not(.current) {
     display: block;
   }
 }
@@ -2936,15 +2936,15 @@ ul {
 
 @media (min-width: 768px) {
   .collapsible-nav-list li[aria-selected="true"],
-  .collapsible-nav-list li.current {
-    border-bottom: 4px solid $brand_color;
+.collapsible-nav-list li.current {
+    border-bottom: 4px solid #663399;
     order: 1;
   }
 }
 
 .collapsible-nav-list li[aria-selected="true"] a,
 .collapsible-nav-list li.current a {
-  color: $text_color;
+  color: #635e69;
 }
 
 .collapsible-nav[aria-expanded="true"] li:not([aria-selected="true"]),
@@ -3010,7 +3010,7 @@ ul {
 
 .collapsible-sidebar-toggle:focus {
   outline: none;
-  border: 1px solid $brand_color;
+  border: 1px solid #663399;
 }
 
 .collapsible-sidebar-body {
@@ -3033,7 +3033,7 @@ ul {
 
 /***** My activities *****/
 .my-activities-nav {
-  background-color: darken($background_color, 5%);
+  background-color: darken(#fff, 5%);
   margin-bottom: 20px;
 }
 
@@ -3077,7 +3077,7 @@ ul {
 
 @media (min-width: 1024px) {
   .my-activities-table th:first-child,
-  .my-activities-table td:first-child {
+.my-activities-table td:first-child {
     width: 500px;
   }
 }
@@ -3143,7 +3143,7 @@ ul {
 }
 
 .requests-table-toolbar .request-filter-label {
-  font-size: 13px;
+  font-size: 0.875rem;
   margin-top: 30px;
 }
 
@@ -3275,8 +3275,8 @@ ul {
 
 /* Contributions table */
 .contributions-table td:last-child {
-  color: lighten($text_color, 20%);
-  font-size: 13px;
+  color: lighten(#635e69, 20%);
+  font-size: 0.875rem;
   font-weight: 300;
 }
 
@@ -3289,7 +3289,7 @@ ul {
 }
 
 .no-activities {
-  color: lighten($text_color, 20%);
+  color: lighten(#635e69, 20%);
 }
 
 /***** Request *****/
@@ -3357,7 +3357,7 @@ ul {
 .request-main .comment-show-container {
   border-radius: 2px;
   border: 1px solid #ddd;
-  color: lighten($text_color, 20%);
+  color: lighten(#635e69, 20%);
   text-align: inherit;
   padding: 8px 25px;
   width: 100%;
@@ -3374,7 +3374,7 @@ ul {
 }
 
 .request-main .form-field.comment-ccs > ul[data-hc-focus="true"] {
-  border: 1px solid $brand_color;
+  border: 1px solid #663399;
 }
 
 .request-main .form-field.comment-ccs > input[type="text"] {
@@ -3390,7 +3390,7 @@ ul {
 }
 
 .request-main .comment-ccs + textarea:focus {
-  border-top: 1px solid $brand_color;
+  border-top: 1px solid #663399;
 }
 
 .request-main input#mark_as_solved {
@@ -3419,9 +3419,9 @@ ul {
 
 @media (min-width: 1024px) {
   .request-sidebar {
-    background-color: darken($background_color, 3%);
+    background-color: darken(#fff, 3%);
     border: 0;
-    font-size: 13px;
+    font-size: 0.875rem;
     flex: 0 0 auto;
     padding: 0 20px;
     width: 30%;
@@ -3429,7 +3429,7 @@ ul {
 }
 
 .request-sidebar h2 {
-  font-size: 15px;
+  font-size: 1rem;
   font-weight: 600;
   position: relative;
 }
@@ -3454,7 +3454,7 @@ ul {
 .request-details dt, .request-details dd {
   display: inline-block;
   vertical-align: top;
-  font-size: 13px;
+  font-size: 0.875rem;
   margin: 20px 0 0 0;
 }
 
@@ -3469,7 +3469,7 @@ ul {
 }
 
 .request-details dt {
-  color: lighten($text_color, 20%);
+  color: lighten(#635e69, 20%);
   font-weight: 300;
   width: 40%;
 }
@@ -3572,8 +3572,8 @@ ul {
 }
 
 .meta-data {
-  color: lighten($text_color, 20%);
-  font-size: 13px;
+  color: lighten(#635e69, 20%);
+  font-size: 0.875rem;
   font-weight: 300;
 }
 
@@ -3585,7 +3585,7 @@ ul {
 /* User Profiles */
 .profile-header {
   padding: 30px 0;
-  background-color: darken($background_color, 3%);
+  background-color: darken(#fff, 3%);
 }
 
 .profile-header .container {
@@ -3692,7 +3692,7 @@ ul {
 }
 
 .profile-stats {
-  font-size: 13px;
+  font-size: 0.875rem;
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
@@ -3704,7 +3704,7 @@ ul {
 }
 
 .profile-stats .stat-label {
-  color: lighten($text_color, 20%);
+  color: lighten(#635e69, 20%);
   font-weight: 300;
   flex: 0 0 100px;
   margin-right: 10px;
@@ -3818,9 +3818,9 @@ ul {
 
 .profile-private-badge {
   flex-basis: 100%;
-  border: solid 1px $brand_color;
+  border: solid 1px #663399;
   border-radius: 4px;
-  color: $brand_color;
+  color: #663399;
   padding: 5px 20px;
   font-size: 12px;
   text-align: center;
@@ -3838,7 +3838,7 @@ ul {
 }
 
 .profile-nav {
-  background-color: darken($background_color, 5%);
+  background-color: darken(#fff, 5%);
   margin-bottom: 37px;
 }
 
@@ -3865,9 +3865,9 @@ ul {
 .profile-section-description {
   flex-basis: 100%;
   padding: 10px 0;
-  color: lighten($text_color, 20%);
+  color: lighten(#635e69, 20%);
   font-weight: 300;
-  font-size: 13px;
+  font-size: 0.875rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -3883,7 +3883,7 @@ ul {
 .profile-section-sorter {
   flex-basis: 100%;
   border-top: solid 1px #eee;
-  font-size: 13px;
+  font-size: 0.875rem;
 }
 
 .profile-section-sorter .dropdown-toggle {
@@ -3954,7 +3954,7 @@ ul {
 }
 
 .profile-badges-item-title, .profile-badges-item-metadata-title {
-  font-size: 15px;
+  font-size: 1rem;
   margin-bottom: 10px;
 }
 
@@ -3963,8 +3963,8 @@ ul {
 }
 
 .profile-badges-item-description, .profile-badges-item-metadata-description {
-  color: lighten($text_color, 20%);
-  font-size: 13px;
+  color: lighten(#635e69, 20%);
+  font-size: 0.875rem;
   margin: 0;
 }
 
@@ -4172,7 +4172,7 @@ ul {
   padding: 20px;
   margin-top: 10px;
   border-radius: 8px;
-  background-color: darken($background_color, 3%);
+  background-color: darken(#fff, 3%);
 }
 
 @media (min-width: 768px) {
@@ -4194,7 +4194,7 @@ ul {
   border-radius: 50%;
   background-size: 14px 14px;
   background-repeat: no-repeat;
-  background-color: $background_color;
+  background-color: #fff;
   background-position: 50% 50%;
   text-align: center;
   color: #ccc;
@@ -4299,7 +4299,7 @@ ul {
   cursor: pointer;
   display: block;
   padding: 10px;
-  color: $link_color;
+  color: #663399;
 }
 
 .search-results-sidebar .see-all-filters[aria-hidden="true"] {
@@ -4387,7 +4387,7 @@ ul {
 }
 
 .search-result-title {
-  font-size: 16px;
+  font-size: 1.125rem;
   display: inline-block;
 }
 
@@ -4400,16 +4400,16 @@ ul {
 }
 
 .search-result-votes, .search-result-meta-count {
-  color: lighten($text_color, 20%);
+  color: lighten(#635e69, 20%);
   display: inline-block;
-  font-size: 13px;
+  font-size: 0.875rem;
   font-weight: 300;
   padding: 4px 5px;
   position: relative;
 }
 
 .search-result-votes-icon, .search-result-meta-count-icon {
-  color: $brand_color;
+  color: #663399;
   vertical-align: middle;
   width: 13px;
   height: 13px;
@@ -4489,7 +4489,7 @@ html[lang|="zh"] .search-results-description em {
   max-width: 980px;
 }
 
-.notification-icon, .notification-text, .notification-dismiss {
+.notification-icon, .notification-inline.notification-error::before, .notification-text, .notification-dismiss {
   display: table-cell;
   vertical-align: middle;
 }
@@ -4554,7 +4554,7 @@ html[lang|="zh"] .search-results-description em {
   text-decoration: none !important;
 }
 
-.notification-dismiss:hover {
+.notification-dismiss:hover, .split-button button.notification-dismiss:hover {
   opacity: 1;
 }
 
@@ -4623,7 +4623,7 @@ html[dir="rtl"] .notification-left-aligned {
   vertical-align: middle;
 }
 
-.dropdown-toggle:hover {
+.dropdown-toggle:hover, .split-button button.dropdown-toggle:hover {
   text-decoration: none;
 }
 
