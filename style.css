@@ -1477,10 +1477,6 @@ ul {
   text-decoration: none;
 }
 
-.article-list-item:hover:before, .notification-inline.notification-error:hover::before {
-  content: "• ";
-}
-
 .icon-star {
   color: #663399;
   font-size: 18px;
