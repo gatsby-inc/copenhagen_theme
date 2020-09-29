@@ -1057,7 +1057,7 @@ ul {
 
 .page-header h1 {
   flex-grow: 1;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 
 .page-header-description {
@@ -1168,7 +1168,7 @@ ul {
 
 .blocks-item-link {
   color: #663399;
-  padding: 20px 30px;
+  padding: 40px 30px;
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -1188,7 +1188,7 @@ ul {
 
 .blocks-item-title {
   margin-bottom: 0;
-  font-size: 16px;
+  font-size: 1.125rem;
 }
 
 .blocks-item-description {
