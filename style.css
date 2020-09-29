@@ -188,7 +188,7 @@ template {
 
 body {
   background-color: #fff;
-  color: #635e69;
+  color: #36313d;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   font-size: 1rem;
   font-weight: 400;
@@ -226,7 +226,7 @@ h4 {
 }
 
 a {
-  color: #663399;
+  color: #8a4baf;
   text-decoration: none;
 }
 
@@ -237,7 +237,7 @@ a:hover, a:active, a:focus {
 input,
 textarea {
   color: #000;
-  font-size: 14px;
+  font-size: 1rem;
 }
 
 input {
@@ -268,7 +268,7 @@ select {
   border-radius: 4px;
   padding: 8px 30px 8px 10px;
   outline: none;
-  color: #555;
+  color: #232129;
   width: 100%;
 }
 
@@ -347,9 +347,9 @@ ul {
 /***** Buttons *****/
 .button, .pagination-next-link, .pagination-prev-link, .pagination-first-link, .pagination-last-link, .subscriptions-subscribe button, .requests-table-toolbar .organization-subscribe button, .community-follow button, .article-subscribe button, .section-subscribe button, .split-button button {
   background-color: transparent;
-  border: 1px solid #663399;
+  border: 1px solid #36313d;
   border-radius: 4px;
-  color: #663399;
+  color: #36313d;
   cursor: pointer;
   display: inline-block;
   font-size: 12px;
@@ -387,7 +387,7 @@ ul {
 
 .button-large, input[type="submit"] {
   cursor: pointer;
-  background-color: #663399;
+  background-color: #36313d;
   border: 0;
   border-radius: 4px;
   color: #fff;
@@ -414,13 +414,13 @@ ul {
 }
 
 .button-secondary {
-  color: lighten(#635e69, 20%);
+  color: lighten(#36313d, 20%);
   border: 1px solid #ddd;
   background-color: transparent;
 }
 
 .button-secondary:hover, .split-button button.button-secondary:hover, .button-secondary:focus, .button-secondary:active {
-  color: #635e69;
+  color: #36313d;
   border: 1px solid #ddd;
   background-color: darken(#fff, 3%);
 }
@@ -487,7 +487,7 @@ ul {
 
 .table th,
 .table th a {
-  color: lighten(#635e69, 20%);
+  color: lighten(#36313d, 20%);
   font-size: 0.875rem;
   font-weight: 300;
   text-align: left;
@@ -599,12 +599,12 @@ ul {
 }
 
 .form-field .optional {
-  color: lighten(#635e69, 20%);
+  color: lighten(#36313d, 20%);
   margin-left: 4px;
 }
 
 .form-field p {
-  color: lighten(#635e69, 20%);
+  color: lighten(#36313d, 20%);
   font-size: 12px;
   margin: 5px 0;
 }
@@ -615,7 +615,7 @@ ul {
 }
 
 .form footer a {
-  color: lighten(#635e69, 20%);
+  color: lighten(#36313d, 20%);
   cursor: pointer;
   margin-right: 15px;
 }
@@ -636,7 +636,7 @@ ul {
 }
 
 .form .suggestion-list li a:visited {
-  color: darken(#663399, 20%);
+  color: darken(#8a4baf, 20%);
 }
 
 /***** Header *****/
@@ -691,7 +691,7 @@ ul {
 
 .nav-wrapper a {
   border: 0;
-  color: #663399;
+  color: #8a4baf;
   display: none;
   font-size: 14px;
   padding: 0 20px 0 0;
@@ -710,7 +710,7 @@ ul {
 
 .nav-wrapper a:hover, .nav-wrapper a:focus, .nav-wrapper a:active {
   background-color: transparent;
-  color: #663399;
+  color: #8a4baf;
   text-decoration: underline;
 }
 
@@ -737,7 +737,7 @@ ul {
 .nav-wrapper .menu-button {
   background: none;
   border: 0;
-  color: #663399;
+  color: #8a4baf;
   display: inline-block;
   margin-right: 10px;
   padding: 0;
@@ -763,7 +763,7 @@ ul {
 
 .nav-wrapper .menu-button:hover, .nav-wrapper .menu-button:focus, .nav-wrapper .menu-button:active {
   background-color: transparent;
-  color: #663399;
+  color: #8a4baf;
 }
 
 .skip-navigation {
@@ -818,19 +818,19 @@ ul {
 
 .user-info > button {
   border: 0;
-  color: #663399;
+  color: #8a4baf;
   min-width: 0;
   padding: 0;
   white-space: nowrap;
 }
 
 .user-info > button:hover, .split-button .user-info > button:hover, .user-info > button:focus {
-  color: #663399;
+  color: #8a4baf;
   background-color: transparent;
 }
 
 .user-info > button::after {
-  color: #663399;
+  color: #8a4baf;
   padding-right: 15px;
 }
 
@@ -896,7 +896,7 @@ ul {
 }
 
 .footer a {
-  color: lighten(#635e69, 20%);
+  color: lighten(#36313d, 20%);
 }
 
 .footer-inner {
@@ -915,7 +915,7 @@ ul {
 }
 
 .footer-language-selector {
-  color: lighten(#635e69, 20%);
+  color: lighten(#36313d, 20%);
   display: inline-block;
   font-weight: 300;
 }
@@ -933,7 +933,7 @@ ul {
 }
 
 .breadcrumbs li {
-  color: lighten(#635e69, 20%);
+  color: lighten(#36313d, 20%);
   display: inline;
   font-weight: 300;
   font-size: 0.875rem;
@@ -948,7 +948,7 @@ ul {
 }
 
 .breadcrumbs li a:visited {
-  color: #663399;
+  color: #8a4baf;
 }
 
 /***** Search field *****/
@@ -960,7 +960,7 @@ ul {
   border: 1px solid #ddd;
   border-radius: 30px;
   box-sizing: border-box;
-  color: #666;
+  color: #232129;
   height: 50px;
   padding-left: 40px;
   padding-right: 20px;
@@ -975,11 +975,11 @@ ul {
 
 .search input[type="search"]:focus {
   border: 1px solid #663399;
-  color: #555;
+  color: #232129;
 }
 
 .search-full input[type="search"] {
-  border: 1px solid #fff;
+  border: 1px solid #d9d7e0;
 }
 
 .search-icon {
@@ -1157,7 +1157,7 @@ ul {
 }
 
 .blocks-item-internal a {
-  color: #635e69;
+  color: #36313d;
 }
 
 .blocks-item-link {
@@ -1248,7 +1248,7 @@ ul {
   display: block;
   border-bottom: 1px solid #ddd;
   padding: 15px 0;
-  color: #635e69;
+  color: #36313d;
 }
 
 .promoted-articles-item .icon-lock {
@@ -1306,7 +1306,7 @@ ul {
 
 .recent-activity-item-parent, .recent-activity-item-link {
   margin: 6px 0;
-  color: #635e69;
+  color: #36313d;
   display: inline-block;
   width: 100%;
 }
@@ -1339,7 +1339,7 @@ ul {
 }
 
 .recent-activity-item-time, .recent-activity-item-comment {
-  color: lighten(#635e69, 20%);
+  color: lighten(#36313d, 20%);
   display: inline-block;
   font-size: 0.875rem;
   font-weight: 300;
@@ -1439,7 +1439,7 @@ ul {
 }
 
 .section-tree-title a {
-  color: #635e69;
+  color: #36313d;
 }
 
 .section-tree .see-all-articles {
@@ -1453,7 +1453,7 @@ ul {
 }
 
 .article-list-item a {
-  color: #635e69;
+  color: #36313d;
 }
 
 .icon-star {
@@ -1497,7 +1497,7 @@ ul {
 
 .section-list-item a {
   align-items: center;
-  color: #635e69;
+  color: #36313d;
   display: flex;
   justify-content: space-between;
 }
@@ -1629,7 +1629,7 @@ ul {
 }
 
 .article-body a:visited {
-  color: darken(#663399, 20%);
+  color: darken(#8a4baf, 20%);
 }
 
 .article-body code {
@@ -1651,7 +1651,7 @@ ul {
 
 .article-body blockquote {
   border-left: 1px solid #ddd;
-  color: lighten(#635e69, 20%);
+  color: lighten(#36313d, 20%);
   font-style: italic;
   padding: 0 15px;
 }
@@ -1674,7 +1674,7 @@ ul {
 }
 
 .article-comment-count {
-  color: lighten(#635e69, 20%);
+  color: lighten(#36313d, 20%);
   font-weight: 300;
 }
 
@@ -1763,7 +1763,7 @@ ul {
 }
 
 .article-return-to-top a {
-  color: #635e69;
+  color: #36313d;
   display: block;
   padding: 20px 0;
 }
@@ -1784,7 +1784,7 @@ ul {
 
 .sidenav-item {
   border-radius: 4px;
-  color: #635e69;
+  color: #36313d;
   display: block;
   font-weight: 300;
   margin-bottom: 10px;
@@ -1815,7 +1815,7 @@ ul {
 }
 
 .attachments .attachment-item .attachment-icon {
-  color: #635e69;
+  color: #36313d;
   left: 0;
   position: absolute;
   top: 5px;
@@ -1832,7 +1832,7 @@ ul {
 }
 
 .upload-dropzone span {
-  color: lighten(#635e69, 20%);
+  color: lighten(#36313d, 20%);
 }
 
 /***** Social share links *****/
@@ -1851,7 +1851,7 @@ ul {
 }
 
 .share a {
-  color: lighten(#635e69, 20%);
+  color: lighten(#36313d, 20%);
 }
 
 .share a:hover {
@@ -1891,7 +1891,7 @@ ul {
 }
 
 .comment-callout {
-  color: lighten(#635e69, 20%);
+  color: lighten(#36313d, 20%);
   display: inline-block;
   font-weight: 300;
   font-size: 0.875rem;
@@ -1908,7 +1908,7 @@ ul {
 }
 
 .comment-sorter .dropdown-toggle {
-  color: lighten(#635e69, 20%);
+  color: lighten(#36313d, 20%);
   font-weight: 300;
   font-size: 0.875rem;
 }
@@ -2088,7 +2088,7 @@ ul {
 }
 
 .comment-body a:visited {
-  color: darken(#663399, 20%);
+  color: darken(#8a4baf, 20%);
 }
 
 .comment-body code {
@@ -2110,7 +2110,7 @@ ul {
 
 .comment-body blockquote {
   border-left: 1px solid #ddd;
-  color: lighten(#635e69, 20%);
+  color: lighten(#36313d, 20%);
   font-style: italic;
   padding: 0 15px;
 }
@@ -2132,7 +2132,7 @@ ul {
 }
 
 .vote-sum {
-  color: lighten(#635e69, 20%);
+  color: lighten(#36313d, 20%);
   display: block;
   margin: 3px 0;
 }
@@ -2158,7 +2158,7 @@ ul {
   appearance: none;
   background-color: transparent;
   border: none;
-  color: lighten(#635e69, 20%);
+  color: lighten(#36313d, 20%);
   cursor: pointer;
   min-height: 35px;
   min-width: 35px;
@@ -2336,9 +2336,9 @@ ul {
 }
 
 .community-follow button::after {
-  border-left: 1px solid #663399;
+  border-left: 1px solid #36313d;
   content: attr(data-follower-count);
-  color: #663399;
+  color: #36313d;
   display: inline-block;
   font-family: Futura PT, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   margin-left: 15px;
@@ -2355,7 +2355,7 @@ ul {
 
 [dir="rtl"] .community-follow button::after {
   border-left: 0;
-  border-right: 1px solid #663399;
+  border-right: 1px solid #36313d;
   margin: 0 10px 0 0;
   padding: 0 10px 0 0;
 }
@@ -2387,7 +2387,7 @@ ul {
 }
 
 .striped-list-title {
-  color: #663399;
+  color: #8a4baf;
   margin-bottom: 10px;
   margin-right: 5px;
 }
@@ -2397,7 +2397,7 @@ ul {
 }
 
 .striped-list-title:visited {
-  color: darken(#663399, 20%);
+  color: darken(#8a4baf, 20%);
 }
 
 .striped-list .meta-group {
@@ -2405,7 +2405,7 @@ ul {
 }
 
 .striped-list-count {
-  color: lighten(#635e69, 20%);
+  color: lighten(#36313d, 20%);
   font-weight: 300;
   font-size: 0.875rem;
   justify-content: flex-start;
@@ -2443,7 +2443,7 @@ ul {
 
 @media (min-width: 768px) {
   .striped-list-number {
-    color: #635e69;
+    color: #36313d;
     display: block;
     font-weight: 400;
   }
@@ -2497,7 +2497,7 @@ ul {
 
 .status-label-not-planned, .status-label-closed {
   background-color: #e9ebed;
-  color: lighten(#635e69, 20%);
+  color: lighten(#36313d, 20%);
 }
 
 .status-label-pending, .status-label-pending-moderation {
@@ -2668,7 +2668,7 @@ ul {
 }
 
 .post-body a:visited {
-  color: darken(#663399, 20%);
+  color: darken(#8a4baf, 20%);
 }
 
 .post-body code {
@@ -2690,7 +2690,7 @@ ul {
 
 .post-body blockquote {
   border-left: 1px solid #ddd;
-  color: lighten(#635e69, 20%);
+  color: lighten(#36313d, 20%);
   font-style: italic;
   padding: 0 15px;
 }
@@ -2703,7 +2703,7 @@ ul {
 }
 
 .post-comment-count {
-  color: lighten(#635e69, 20%);
+  color: lighten(#36313d, 20%);
   font-weight: 300;
 }
 
@@ -2875,7 +2875,7 @@ ul {
 }
 
 .collapsible-nav-list li {
-  color: #635e69;
+  color: #36313d;
   line-height: 45px;
   order: 1;
 }
@@ -2896,7 +2896,7 @@ ul {
 }
 
 .collapsible-nav-list li a {
-  color: #635e69;
+  color: #36313d;
   display: block;
 }
 
@@ -2944,7 +2944,7 @@ ul {
 
 .collapsible-nav-list li[aria-selected="true"] a,
 .collapsible-nav-list li.current a {
-  color: #635e69;
+  color: #36313d;
 }
 
 .collapsible-nav[aria-expanded="true"] li:not([aria-selected="true"]),
@@ -3275,7 +3275,7 @@ ul {
 
 /* Contributions table */
 .contributions-table td:last-child {
-  color: lighten(#635e69, 20%);
+  color: lighten(#36313d, 20%);
   font-size: 0.875rem;
   font-weight: 300;
 }
@@ -3289,7 +3289,7 @@ ul {
 }
 
 .no-activities {
-  color: lighten(#635e69, 20%);
+  color: lighten(#36313d, 20%);
 }
 
 /***** Request *****/
@@ -3357,7 +3357,7 @@ ul {
 .request-main .comment-show-container {
   border-radius: 2px;
   border: 1px solid #ddd;
-  color: lighten(#635e69, 20%);
+  color: lighten(#36313d, 20%);
   text-align: inherit;
   padding: 8px 25px;
   width: 100%;
@@ -3469,7 +3469,7 @@ ul {
 }
 
 .request-details dt {
-  color: lighten(#635e69, 20%);
+  color: lighten(#36313d, 20%);
   font-weight: 300;
   width: 40%;
 }
@@ -3572,7 +3572,7 @@ ul {
 }
 
 .meta-data {
-  color: lighten(#635e69, 20%);
+  color: lighten(#36313d, 20%);
   font-size: 0.875rem;
   font-weight: 300;
 }
@@ -3704,7 +3704,7 @@ ul {
 }
 
 .profile-stats .stat-label {
-  color: lighten(#635e69, 20%);
+  color: lighten(#36313d, 20%);
   font-weight: 300;
   flex: 0 0 100px;
   margin-right: 10px;
@@ -3865,7 +3865,7 @@ ul {
 .profile-section-description {
   flex-basis: 100%;
   padding: 10px 0;
-  color: lighten(#635e69, 20%);
+  color: lighten(#36313d, 20%);
   font-weight: 300;
   font-size: 0.875rem;
   white-space: nowrap;
@@ -3963,7 +3963,7 @@ ul {
 }
 
 .profile-badges-item-description, .profile-badges-item-metadata-description {
-  color: lighten(#635e69, 20%);
+  color: lighten(#36313d, 20%);
   font-size: 0.875rem;
   margin: 0;
 }
@@ -4290,7 +4290,7 @@ ul {
 }
 
 .search-results-sidebar .multibrand-filter-list .doc-count {
-  color: #666;
+  color: #232129;
 }
 
 .search-results-sidebar .see-all-filters {
@@ -4299,7 +4299,7 @@ ul {
   cursor: pointer;
   display: block;
   padding: 10px;
-  color: #663399;
+  color: #8a4baf;
 }
 
 .search-results-sidebar .see-all-filters[aria-hidden="true"] {
@@ -4400,7 +4400,7 @@ ul {
 }
 
 .search-result-votes, .search-result-meta-count {
-  color: lighten(#635e69, 20%);
+  color: lighten(#36313d, 20%);
   display: inline-block;
   font-size: 0.875rem;
   font-weight: 300;
