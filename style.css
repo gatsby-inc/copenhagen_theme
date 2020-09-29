@@ -1439,7 +1439,7 @@ ul {
 }
 
 .section-tree-title {
-  margin-bottom: 0;
+  margin-bottom: 1rem;
   font-size: 18px;
   font-weight: 600;
 }
@@ -1454,12 +1454,31 @@ ul {
 }
 
 .article-list-item {
-  font-size: 1.125rem;
-  padding: 15px 0;
+  font-size: 0.875rem;
+  padding: 12px 0 12px 5px;
+  border-bottom: 1px solid #f0f0f2;
 }
 
 .article-list-item a {
   color: #36313d;
+}
+
+.article-list-item:last-of-type {
+  border: none;
+}
+
+.article-list-item:hover, .split-button button.article-list-item:hover {
+  background-color: #fbf5fd;
+  transition: 0.25s;
+}
+
+.article-list-item:hover a {
+  color: #663399;
+  text-decoration: none;
+}
+
+.article-list-item:hover:before, .notification-inline.notification-error:hover::before {
+  content: "• ";
 }
 
 .icon-star {
