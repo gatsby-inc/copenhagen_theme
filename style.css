@@ -1029,6 +1029,7 @@ ul {
 }
 
 .hero-cta {
+  font-size: 3rem;
   background: linear-gradient(180deg, #0e8de6 0%, rebeccapurple 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
