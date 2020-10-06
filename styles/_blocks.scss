@@ -27,14 +27,15 @@
     margin: 0 0 30px;
     max-width: 100%;
     text-align: center;
+    font-weight: $font-weight-semibold;
 
     &:hover,
     &:focus,
     &:active {
-      background-color: $brand_color;
+      background-color: $hover-link-background-color;
 
       * {
-        color: $brand_text_color;
+        color: $brand_color;
         text-decoration: none;
       }
     }

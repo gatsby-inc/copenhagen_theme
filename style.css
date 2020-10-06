@@ -300,12 +300,12 @@ textarea:focus {
 }
 
 .container {
-  max-width: 1160px;
+  max-width: 960px;
   margin: 0 auto;
   padding: 0 5%;
 }
 
-@media (min-width: 1160px) {
+@media (min-width: 960px) {
   .container {
     padding: 0;
     width: 90%;
@@ -324,12 +324,12 @@ ul {
 }
 
 .error-page {
-  max-width: 1160px;
+  max-width: 960px;
   margin: 0 auto;
   padding: 0 5%;
 }
 
-@media (min-width: 1160px) {
+@media (min-width: 960px) {
   .error-page {
     padding: 0;
     width: 90%;
@@ -647,7 +647,7 @@ ul {
 
 /***** Header *****/
 .header {
-  max-width: 1160px;
+  max-width: 960px;
   margin: 0 auto;
   padding: 0 5%;
   position: relative;
@@ -657,7 +657,7 @@ ul {
   justify-content: space-between;
 }
 
-@media (min-width: 1160px) {
+@media (min-width: 960px) {
   .header {
     padding: 0;
     width: 90%;
@@ -906,14 +906,14 @@ ul {
 }
 
 .footer-inner {
-  max-width: 1160px;
+  max-width: 960px;
   margin: 0 auto;
   padding: 0 5%;
   display: flex;
   justify-content: space-between;
 }
 
-@media (min-width: 1160px) {
+@media (min-width: 960px) {
   .footer-inner {
     padding: 0;
     width: 90%;
@@ -1134,6 +1134,7 @@ ul {
   margin: 0 0 30px;
   max-width: 100%;
   text-align: center;
+  font-weight: 600;
 }
 
 @media (min-width: 768px) {
@@ -1143,11 +1144,11 @@ ul {
 }
 
 .blocks-item:hover, .split-button button.blocks-item:hover, .blocks-item:focus, .blocks-item:active {
-  background-color: #663399;
+  background-color: #fbf5fd;
 }
 
 .blocks-item:hover *, .split-button button.blocks-item:hover *, .blocks-item:focus *, .blocks-item:active * {
-  color: #fff;
+  color: #663399;
   text-decoration: none;
 }
 
