@@ -989,15 +989,14 @@ ul {
 }
 
 .search-icon {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
   position: absolute;
+  top: 18px;
   left: 15px;
   z-index: 1;
   width: 18px;
   height: 18px;
   color: #777;
+  transform: none;
 }
 
 [dir="rtl"] .search-icon {
@@ -1027,6 +1026,12 @@ ul {
   transform: translateY(-50%);
   max-width: 610px;
   margin: 0 auto;
+}
+
+.hero-cta {
+  background: linear-gradient(180deg, #0e8de6 0%, rebeccapurple 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .page-header {

@@ -19,3 +19,14 @@
     margin: 0 auto;
   }
 }
+
+.hero-cta {
+  // font-size: 72px;
+  background: linear-gradient(
+    180deg,
+    rgba(14, 141, 230, 1) 0%,
+    rgba(102, 51, 153, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

@@ -30,13 +30,15 @@
 }
 
 .search-icon {
-  @include vertical-align;
+  // @include vertical-align;
   position: absolute;
+  top: 18px;
   left: 15px;
   z-index: 1;
   width: 18px;
   height: 18px;
   color: #777;
+  transform: none;
 
   [dir="rtl"] & {
     right: 15px;
