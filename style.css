@@ -1011,7 +1011,8 @@ ul {
 
 /***** Hero component *****/
 .hero {
-  background-image: url($homepage_background_image);
+  background: #f4fcff;
+  background: linear-gradient(180deg, #f4fcff 0%, #f5eefb 100%);
   background-position: center;
   background-size: cover;
   height: 300px;
@@ -1201,6 +1202,10 @@ ul {
 }
 
 /***** Homepage *****/
+#homepage {
+  background-color: #fff;
+}
+
 .section {
   margin-bottom: 40px;
 }

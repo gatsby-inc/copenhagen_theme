@@ -9,6 +9,9 @@ $link_color: #8a4baf;
 $background_color: #fff;
 $hr_color: #f0f0f2;
 
+$hero_gradient_start: rgba(244, 252, 255, 1);
+$hero_gradient_end: rgba(245, 238, 251, 1);
+
 $visited-link-color: zass-darken($link_color, 20%);
 $hover-button-color: zass-darken($brand_color, 20%);
 $secondary-text-color: zass-lighten($text_color, 20%);

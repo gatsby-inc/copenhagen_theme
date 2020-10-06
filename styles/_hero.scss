@@ -1,6 +1,11 @@
 /***** Hero component *****/
 .hero {
-  background-image: url($homepage_background_image);
+  background: rgb(244, 252, 255);
+  background: linear-gradient(
+    180deg,
+    $hero_gradient_start 0%,
+    $hero_gradient_end 100%
+  );
   background-position: center;
   background-size: cover;
   height: 300px;
