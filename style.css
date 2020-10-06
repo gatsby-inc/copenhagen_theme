@@ -1189,8 +1189,6 @@ ul {
 }
 
 .blocks-item-link:focus {
-  outline: 0;
-  box-shadow: 0 0 0 3px #663399;
   text-decoration: none;
 }
 
