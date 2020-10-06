@@ -1819,15 +1819,19 @@ ul {
   border-radius: 4px;
   color: #36313d;
   display: block;
+  font-size: 0.875rem;
   font-weight: 300;
-  margin-bottom: 10px;
   padding: 10px;
 }
 
 .sidenav-item.current-article, .sidenav-item:hover, .split-button button.sidenav-item:hover {
-  background-color: #663399;
-  color: #fff;
+  background-color: #fbf5fd;
+  color: #663399;
   text-decoration: none;
+}
+
+.sidenav-item.current-article {
+  font-weight: 600;
 }
 
 .recent-articles li,
