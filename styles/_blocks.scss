@@ -26,6 +26,7 @@
     flex: 1 0 340px;
     margin: 0 0 30px;
     max-width: 100%;
+    position: relative;
     text-align: center;
     font-weight: $font-weight-semibold;
 
@@ -72,14 +73,13 @@
     }
 
     &:focus {
-      // @include focus-ring;
       text-decoration: none;
     }
   }
 
   &-item-title {
     margin-bottom: 0;
-    font-size: $font-size-bigger;
+    font-size: 1.75rem;
   }
 
   &-item-description {

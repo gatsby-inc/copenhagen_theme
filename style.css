@@ -208,7 +208,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Futura PT, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-family: Futura, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   font-weight: 400;
   margin-top: 0;
 }
@@ -1014,6 +1014,8 @@ ul {
   background: linear-gradient(180deg, #f4fcff 0%, #f5eefb 100%);
   background-position: center;
   background-size: cover;
+  box-shadow: 0 3px 8px -6px;
+  border-radius: 1rem;
   height: 300px;
   padding: 0 20px;
   text-align: center;
@@ -1030,6 +1032,7 @@ ul {
 
 .hero-cta {
   font-size: 3rem;
+  font-family: Futura, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   background: linear-gradient(180deg, #0e8de6 0%, rebeccapurple 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1139,6 +1142,7 @@ ul {
   flex: 1 0 340px;
   margin: 0 0 30px;
   max-width: 100%;
+  position: relative;
   text-align: center;
   font-weight: 600;
 }
@@ -1194,7 +1198,7 @@ ul {
 
 .blocks-item-title {
   margin-bottom: 0;
-  font-size: 1.125rem;
+  font-size: 1.75rem;
 }
 
 .blocks-item-description {
@@ -1420,7 +1424,7 @@ ul {
 
 @media (min-width: 1024px) {
   .category-content {
-    flex: 0 0 80%;
+    flex: 0 0 100%;
   }
 }
 
@@ -2375,7 +2379,7 @@ ul {
   content: attr(data-follower-count);
   color: #36313d;
   display: inline-block;
-  font-family: Futura PT, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-family: Futura, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   margin-left: 15px;
   padding-left: 10px;
   position: absolute;
