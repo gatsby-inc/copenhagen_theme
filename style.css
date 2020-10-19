@@ -1695,6 +1695,10 @@ ul {
   margin-bottom: 0;
 }
 
+.article-body pre {
+  width: fit-content;
+}
+
 .article-content {
   line-height: 1.6;
   margin: 40px 0;
