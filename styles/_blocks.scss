@@ -18,22 +18,26 @@
       margin: 0 15px 30px;
     }
 
-    border: 1px solid $brand_color;
+    background-color: $block-color;
+    border: 1px solid lightgrey;
     border-radius: 4px;
     box-sizing: border-box;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 22px 0px;
     color: $brand_color;
     display: flex;
-    flex: 1 0 340px;
+    flex: 1 0 370px;
+    font-weight: $font-weight-semibold;
+    height: 240px;
     margin: 0 0 30px;
     max-width: 100%;
     position: relative;
     text-align: center;
-    font-weight: $font-weight-semibold;
+    transition: all 0.2s ease-in-out;
 
     &:hover,
     &:focus,
     &:active {
-      background-color: $hover-link-background-color;
+      transform: scale(1.02);
 
       * {
         color: $brand_color;

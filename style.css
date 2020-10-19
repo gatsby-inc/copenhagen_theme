@@ -1141,17 +1141,21 @@ ul {
 }
 
 .blocks-item {
-  border: 1px solid #663399;
+  background-color: #fbf5fd50;
+  border: 1px solid lightgrey;
   border-radius: 4px;
   box-sizing: border-box;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 22px 0px;
   color: #663399;
   display: flex;
-  flex: 1 0 340px;
+  flex: 1 0 370px;
+  font-weight: 600;
+  height: 240px;
   margin: 0 0 30px;
   max-width: 100%;
   position: relative;
   text-align: center;
-  font-weight: 600;
+  transition: all 0.2s ease-in-out;
 }
 
 @media (min-width: 768px) {
@@ -1161,7 +1165,7 @@ ul {
 }
 
 .blocks-item:hover, .split-button button.blocks-item:hover, .blocks-item:focus, .blocks-item:active {
-  background-color: #fbf5fd;
+  transform: scale(1.02);
 }
 
 .blocks-item:hover *, .split-button button.blocks-item:hover *, .blocks-item:focus *, .blocks-item:active * {
