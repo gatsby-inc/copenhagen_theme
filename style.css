@@ -181,6 +181,7 @@ template {
   display: none;
 }
 
+@use "sass:string";
 /***** Base *****/
 * {
   box-sizing: border-box;
@@ -300,16 +301,20 @@ textarea:focus {
 }
 
 .container {
-  max-width: 960px;
+  max-width: 1160px;
   margin: 0 auto;
   padding: 0 5%;
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1160px) {
   .container {
     padding: 0;
     width: 90%;
   }
+}
+
+.container > * {
+  grid-column: 2;
 }
 
 .container-divider {
@@ -324,12 +329,12 @@ ul {
 }
 
 .error-page {
-  max-width: 960px;
+  max-width: 1160px;
   margin: 0 auto;
   padding: 0 5%;
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1160px) {
   .error-page {
     padding: 0;
     width: 90%;
@@ -526,13 +531,15 @@ ul {
 }
 
 @media (min-width: 1024px) {
-  .table td, .table th {
+  .table td,
+.table th {
     padding: 20px 30px;
   }
 }
 
 @media (min-width: 768px) {
-  .table td, .table th {
+  .table td,
+.table th {
     padding: 10px 20px;
     height: 60px;
   }
@@ -647,7 +654,7 @@ ul {
 
 /***** Header *****/
 .header {
-  max-width: 960px;
+  max-width: 1160px;
   margin: 0 auto;
   padding: 0 5%;
   position: relative;
@@ -657,7 +664,7 @@ ul {
   justify-content: space-between;
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1160px) {
   .header {
     padding: 0;
     width: 90%;
@@ -906,14 +913,14 @@ ul {
 }
 
 .footer-inner {
-  max-width: 960px;
+  max-width: 1160px;
   margin: 0 auto;
   padding: 0 5%;
   display: flex;
   justify-content: space-between;
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1160px) {
   .footer-inner {
     padding: 0;
     width: 90%;
@@ -1642,7 +1649,8 @@ ul {
   max-width: 100%;
 }
 
-.article-body ul, .article-body ol {
+.article-body ul,
+.article-body ol {
   padding-left: 20px;
   list-style-position: outside;
   margin: 20px 0 20px 20px;
@@ -1655,7 +1663,12 @@ ul {
   margin-right: 20px;
 }
 
-.article-body ul > ul, .article-body ol > ol, .article-body ol > ul, .article-body ul > ol, .article-body li > ul, .article-body li > ol {
+.article-body ul > ul,
+.article-body ol > ol,
+.article-body ol > ul,
+.article-body ul > ol,
+.article-body li > ul,
+.article-body li > ol {
   margin: 0;
 }
 
@@ -1693,6 +1706,18 @@ ul {
 
 .article-body > p:last-child {
   margin-bottom: 0;
+}
+
+.article-body table {
+  font-size: 0.8rem;
+}
+
+.article-body table tbody {
+  background-color: #fbf5fd;
+}
+
+.article-body table td {
+  padding: 0.66rem;
 }
 
 .article-body pre {
@@ -2109,7 +2134,8 @@ ul {
   max-width: 100%;
 }
 
-.comment-body ul, .comment-body ol {
+.comment-body ul,
+.comment-body ol {
   padding-left: 20px;
   list-style-position: outside;
   margin: 20px 0 20px 20px;
@@ -2122,7 +2148,12 @@ ul {
   margin-right: 20px;
 }
 
-.comment-body ul > ul, .comment-body ol > ol, .comment-body ol > ul, .comment-body ul > ol, .comment-body li > ul, .comment-body li > ol {
+.comment-body ul > ul,
+.comment-body ol > ol,
+.comment-body ol > ul,
+.comment-body ul > ol,
+.comment-body li > ul,
+.comment-body li > ol {
   margin: 0;
 }
 
@@ -2689,7 +2720,8 @@ ul {
   max-width: 100%;
 }
 
-.post-body ul, .post-body ol {
+.post-body ul,
+.post-body ol {
   padding-left: 20px;
   list-style-position: outside;
   margin: 20px 0 20px 20px;
@@ -2702,7 +2734,12 @@ ul {
   margin-right: 20px;
 }
 
-.post-body ul > ul, .post-body ol > ol, .post-body ol > ul, .post-body ul > ol, .post-body li > ul, .post-body li > ol {
+.post-body ul > ul,
+.post-body ol > ol,
+.post-body ol > ul,
+.post-body ul > ol,
+.post-body li > ul,
+.post-body li > ol {
   margin: 0;
 }
 

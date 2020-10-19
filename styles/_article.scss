@@ -81,6 +81,18 @@
       margin-bottom: 0;
     }
 
+    table {
+      font-size: 0.8rem;
+    }
+
+    table tbody {
+      background-color: $hover-link-background-color;
+    }
+
+    table td {
+      padding: 0.66rem;
+    }
+
     pre {
       width: fit-content;
     }
