@@ -1,0 +1,154 @@
+/* PrismJS 1.22.0
+https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript+graphql */
+/**
+ * prism.js tomorrow night eighties for JavaScript, CoffeeScript, CSS and HTML
+ * Based on https://github.com/chriskempson/tomorrow-theme
+ * @author Rose Pritchard
+ */
+$background: #fdfaf6;
+$bg-inline: #fbf2e9;
+$keyword: #096fb3;
+$plain: #36313d;
+$string: #b94185;
+$function: $string;
+$punctuation: #53450e;
+$tag: #137886;
+$attr-name: $string;
+$code-font: SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono,
+  Courier New, monospace;
+
+
+
+
+.article {
+
+  code{
+    font-family: $code-font;
+  }
+
+  code[class*="language-"],
+  pre[class*="language-"] {
+    color: $plain;
+    background: none;
+    font-weight: lighter;
+    font-size: 0.85rem;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.7;
+
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+
+  /* Code blocks */
+  pre[class*="language-"] {
+    padding: 1em;
+    margin: 0.5em 0;
+    overflow: auto;
+  }
+
+  :not(pre) > code[class*="language-"],
+  pre[class*="language-"] {
+    background: $background;
+  }
+
+  /* Inline code */
+  :not(pre) > code {
+    background-color: $bg-inline;
+    font-size: .9em;
+    padding: 0.1em 0.2em;
+    border-radius: 0.3em;
+    white-space: normal;
+  }
+
+  .token.comment,
+  .token.block-comment,
+  .token.prolog,
+  .token.doctype,
+  .token.cdata {
+    color: #999;
+  }
+
+  .token.punctuation {
+    color: $punctuation;
+  }
+
+  .token.tag,
+  .token.attr-name,
+  .token.namespace,
+  .token.deleted {
+    color: $tag;
+  }
+
+  .token.attr-name {
+    color: $attr-name;
+  }
+
+  .token.function-name {
+    color: #6196cc;
+  }
+
+  .token.boolean,
+  .token.number,
+  .token.function {
+    color: $function;
+  }
+
+  .token.property,
+  .token.class-name,
+  .token.constant,
+  .token.symbol {
+    color: #f8c555;
+  }
+
+  .token.selector,
+  .token.important,
+  .token.atrule,
+  .token.keyword,
+  .token.builtin {
+    color: #096fb3;
+  }
+
+  .token.string,
+  .token.char,
+  .token.attr-value,
+  .token.regex,
+  .token.variable {
+    color: $string;
+  }
+
+  .token.operator,
+  .token.entity,
+  .token.url {
+    color: $punctuation;
+  }
+
+  .token.important,
+  .token.bold {
+    font-weight: bold;
+  }
+  .token.italic {
+    font-style: italic;
+  }
+
+  .token.entity {
+    cursor: help;
+  }
+
+  .token.inserted {
+    color: green;
+  }
+
+  .comment {
+    border-bottom: none;
+  }
+}
