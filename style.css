@@ -356,7 +356,7 @@ ul {
 }
 
 /***** Buttons *****/
-.button, .pagination-next-link, .pagination-prev-link, .pagination-first-link, .pagination-last-link, .subscriptions-subscribe button, .requests-table-toolbar .organization-subscribe button, .community-follow button, .article-subscribe button, .section-subscribe button, .split-button button {
+.button, .split-button button, .section-subscribe button, .article-subscribe button, .community-follow button, .requests-table-toolbar .organization-subscribe button, .subscriptions-subscribe button, .pagination-next-link, .pagination-prev-link, .pagination-first-link, .pagination-last-link {
   background-color: transparent;
   border: 1px solid #36313d;
   border-radius: 4px;
@@ -376,23 +376,23 @@ ul {
 }
 
 @media (min-width: 768px) {
-  .button, .pagination-next-link, .pagination-prev-link, .pagination-first-link, .pagination-last-link, .subscriptions-subscribe button, .requests-table-toolbar .organization-subscribe button, .community-follow button, .article-subscribe button, .section-subscribe button, .split-button button {
+  .button, .split-button button, .section-subscribe button, .article-subscribe button, .community-follow button, .requests-table-toolbar .organization-subscribe button, .subscriptions-subscribe button, .pagination-next-link, .pagination-prev-link, .pagination-first-link, .pagination-last-link {
     width: auto;
   }
 }
 
-.button:hover, .pagination-next-link:hover, .pagination-prev-link:hover, .pagination-first-link:hover, .pagination-last-link:hover, .subscriptions-subscribe button:hover, .requests-table-toolbar .organization-subscribe button:hover, .community-follow button:hover, .article-subscribe button:hover, .section-subscribe button:hover, .split-button button:hover, .button:active, .pagination-next-link:active, .pagination-prev-link:active, .pagination-first-link:active, .pagination-last-link:active, .subscriptions-subscribe button:active, .requests-table-toolbar .organization-subscribe button:active, .community-follow button:active, .article-subscribe button:active, .section-subscribe button:active, .split-button button:active, .button:focus, .pagination-next-link:focus, .pagination-prev-link:focus, .pagination-first-link:focus, .pagination-last-link:focus, .subscriptions-subscribe button:focus, .requests-table-toolbar .organization-subscribe button:focus, .community-follow button:focus, .article-subscribe button:focus, .section-subscribe button:focus, .split-button button:focus, .button.button-primary, .button-primary.pagination-next-link, .button-primary.pagination-prev-link, .button-primary.pagination-first-link, .button-primary.pagination-last-link, .subscriptions-subscribe button.button-primary, .subscriptions-subscribe button[data-selected="true"], .requests-table-toolbar .organization-subscribe button.button-primary, .requests-table-toolbar .organization-subscribe button[data-selected="true"], .community-follow button.button-primary, .article-subscribe button.button-primary, .article-subscribe button[data-selected="true"], .section-subscribe button.button-primary, .section-subscribe button[data-selected="true"], .split-button button.button-primary {
+.button:hover, .split-button button:hover, .section-subscribe button:hover, .article-subscribe button:hover, .community-follow button:hover, .requests-table-toolbar .organization-subscribe button:hover, .subscriptions-subscribe button:hover, .pagination-next-link:hover, .pagination-prev-link:hover, .pagination-first-link:hover, .pagination-last-link:hover, .button:active, .split-button button:active, .section-subscribe button:active, .article-subscribe button:active, .community-follow button:active, .requests-table-toolbar .organization-subscribe button:active, .subscriptions-subscribe button:active, .pagination-next-link:active, .pagination-prev-link:active, .pagination-first-link:active, .pagination-last-link:active, .button:focus, .split-button button:focus, .section-subscribe button:focus, .article-subscribe button:focus, .community-follow button:focus, .requests-table-toolbar .organization-subscribe button:focus, .subscriptions-subscribe button:focus, .pagination-next-link:focus, .pagination-prev-link:focus, .pagination-first-link:focus, .pagination-last-link:focus, .button.button-primary, .split-button button.button-primary, .section-subscribe button.button-primary, .section-subscribe button[data-selected="true"], .article-subscribe button.button-primary, .article-subscribe button[data-selected="true"], .community-follow button.button-primary, .requests-table-toolbar .organization-subscribe button.button-primary, .requests-table-toolbar .organization-subscribe button[data-selected="true"], .subscriptions-subscribe button.button-primary, .subscriptions-subscribe button[data-selected="true"], .button-primary.pagination-next-link, .button-primary.pagination-prev-link, .button-primary.pagination-first-link, .button-primary.pagination-last-link {
   background-color: #663399;
   color: #fff;
   text-decoration: none;
 }
 
-.button.button-primary:hover, .button-primary.pagination-next-link:hover, .button-primary.pagination-prev-link:hover, .button-primary.pagination-first-link:hover, .button-primary.pagination-last-link:hover, .subscriptions-subscribe button.button-primary:hover, .subscriptions-subscribe button[data-selected="true"]:hover, .requests-table-toolbar .organization-subscribe button.button-primary:hover, .requests-table-toolbar .organization-subscribe button[data-selected="true"]:hover, .community-follow button.button-primary:hover, .article-subscribe button.button-primary:hover, .article-subscribe button[data-selected="true"]:hover, .section-subscribe button.button-primary:hover, .section-subscribe button[data-selected="true"]:hover, .split-button button:hover, .button.button-primary:focus, .button-primary.pagination-next-link:focus, .button-primary.pagination-prev-link:focus, .button-primary.pagination-first-link:focus, .button-primary.pagination-last-link:focus, .subscriptions-subscribe button.button-primary:focus, .subscriptions-subscribe button[data-selected="true"]:focus, .requests-table-toolbar .organization-subscribe button.button-primary:focus, .requests-table-toolbar .organization-subscribe button[data-selected="true"]:focus, .community-follow button.button-primary:focus, .article-subscribe button.button-primary:focus, .article-subscribe button[data-selected="true"]:focus, .section-subscribe button.button-primary:focus, .section-subscribe button[data-selected="true"]:focus, .split-button button.button-primary:focus, .button.button-primary:active, .button-primary.pagination-next-link:active, .button-primary.pagination-prev-link:active, .button-primary.pagination-first-link:active, .button-primary.pagination-last-link:active, .subscriptions-subscribe button.button-primary:active, .subscriptions-subscribe button[data-selected="true"]:active, .requests-table-toolbar .organization-subscribe button.button-primary:active, .requests-table-toolbar .organization-subscribe button[data-selected="true"]:active, .community-follow button.button-primary:active, .article-subscribe button.button-primary:active, .article-subscribe button[data-selected="true"]:active, .section-subscribe button.button-primary:active, .section-subscribe button[data-selected="true"]:active, .split-button button.button-primary:active {
+.button.button-primary:hover, .split-button button:hover, .section-subscribe button.button-primary:hover, .section-subscribe button[data-selected="true"]:hover, .article-subscribe button.button-primary:hover, .article-subscribe button[data-selected="true"]:hover, .community-follow button.button-primary:hover, .requests-table-toolbar .organization-subscribe button.button-primary:hover, .requests-table-toolbar .organization-subscribe button[data-selected="true"]:hover, .subscriptions-subscribe button.button-primary:hover, .subscriptions-subscribe button[data-selected="true"]:hover, .button-primary.pagination-next-link:hover, .button-primary.pagination-prev-link:hover, .button-primary.pagination-first-link:hover, .button-primary.pagination-last-link:hover, .button.button-primary:focus, .split-button button.button-primary:focus, .section-subscribe button.button-primary:focus, .section-subscribe button[data-selected="true"]:focus, .article-subscribe button.button-primary:focus, .article-subscribe button[data-selected="true"]:focus, .community-follow button.button-primary:focus, .requests-table-toolbar .organization-subscribe button.button-primary:focus, .requests-table-toolbar .organization-subscribe button[data-selected="true"]:focus, .subscriptions-subscribe button.button-primary:focus, .subscriptions-subscribe button[data-selected="true"]:focus, .button-primary.pagination-next-link:focus, .button-primary.pagination-prev-link:focus, .button-primary.pagination-first-link:focus, .button-primary.pagination-last-link:focus, .button.button-primary:active, .split-button button.button-primary:active, .section-subscribe button.button-primary:active, .section-subscribe button[data-selected="true"]:active, .article-subscribe button.button-primary:active, .article-subscribe button[data-selected="true"]:active, .community-follow button.button-primary:active, .requests-table-toolbar .organization-subscribe button.button-primary:active, .requests-table-toolbar .organization-subscribe button[data-selected="true"]:active, .subscriptions-subscribe button.button-primary:active, .subscriptions-subscribe button[data-selected="true"]:active, .button-primary.pagination-next-link:active, .button-primary.pagination-prev-link:active, .button-primary.pagination-first-link:active, .button-primary.pagination-last-link:active {
   background-color: darken(#663399, 20%);
   border-color: darken(#663399, 20%);
 }
 
-.button[data-disabled], .pagination-next-link[data-disabled], .pagination-prev-link[data-disabled], .pagination-first-link[data-disabled], .pagination-last-link[data-disabled], .subscriptions-subscribe button[data-disabled], .requests-table-toolbar .organization-subscribe button[data-disabled], .community-follow button[data-disabled], .article-subscribe button[data-disabled], .section-subscribe button[data-disabled], .split-button button[data-disabled] {
+.button[data-disabled], .split-button button[data-disabled], .section-subscribe button[data-disabled], .article-subscribe button[data-disabled], .community-follow button[data-disabled], .requests-table-toolbar .organization-subscribe button[data-disabled], .subscriptions-subscribe button[data-disabled], [data-disabled].pagination-next-link, [data-disabled].pagination-prev-link, [data-disabled].pagination-first-link, [data-disabled].pagination-last-link {
   cursor: default;
 }
 
@@ -416,7 +416,7 @@ ul {
   }
 }
 
-.button-large:hover, .split-button button.button-large:hover, .button-large:active, .button-large:focus, input[type="submit"]:hover, .split-button button[type="submit"]:hover, input[type="submit"]:active, input[type="submit"]:focus {
+.button-large:hover, .button-large:active, .button-large:focus, input[type="submit"]:hover, input[type="submit"]:active, input[type="submit"]:focus {
   background-color: darken(#663399, 20%);
 }
 
@@ -430,7 +430,7 @@ ul {
   background-color: transparent;
 }
 
-.button-secondary:hover, .split-button button.button-secondary:hover, .button-secondary:focus, .button-secondary:active {
+.button-secondary:hover, .button-secondary:focus, .button-secondary:active {
   color: #36313d;
   border: 1px solid #ddd;
   background-color: darken(#fff, 3%);
@@ -504,7 +504,8 @@ ul {
   text-align: left;
 }
 
-[dir="rtl"] .table th, [dir="rtl"] .table th a {
+[dir="rtl"] .table th, [dir="rtl"]
+.table th a {
   text-align: right;
 }
 
@@ -532,14 +533,14 @@ ul {
 
 @media (min-width: 1024px) {
   .table td,
-.table th {
+  .table th {
     padding: 20px 30px;
   }
 }
 
 @media (min-width: 768px) {
   .table td,
-.table th {
+  .table th {
     padding: 10px 20px;
     height: 60px;
   }
@@ -837,7 +838,7 @@ ul {
   white-space: nowrap;
 }
 
-.user-info > button:hover, .split-button .user-info > button:hover, .user-info > button:focus {
+.user-info > button:hover, .user-info > button:focus {
   color: #8a4baf;
   background-color: transparent;
 }
@@ -955,7 +956,7 @@ ul {
   text-overflow: ellipsis;
 }
 
-.breadcrumbs li + li::before, .breadcrumbs li + li.notification-inline.notification-error::before {
+.breadcrumbs li + li::before {
   content: ">";
   margin: 0 4px;
 }
@@ -1164,11 +1165,11 @@ ul {
   }
 }
 
-.blocks-item:hover, .split-button button.blocks-item:hover, .blocks-item:focus, .blocks-item:active {
+.blocks-item:hover, .blocks-item:focus, .blocks-item:active {
   transform: scale(1.02);
 }
 
-.blocks-item:hover *, .split-button button.blocks-item:hover *, .blocks-item:focus *, .blocks-item:active * {
+.blocks-item:hover *, .blocks-item:focus *, .blocks-item:active * {
   color: #663399;
   text-decoration: none;
 }
@@ -1199,7 +1200,7 @@ ul {
   border-radius: inherit;
 }
 
-.blocks-item-link:hover, .split-button button.blocks-item-link:hover, .blocks-item-link:active {
+.blocks-item-link:hover, .blocks-item-link:active {
   text-decoration: none;
 }
 
@@ -1384,7 +1385,7 @@ ul {
   padding: 0 5px 0 0;
 }
 
-.recent-activity-item-comment::before, .recent-activity-item-comment.notification-inline.notification-error::before {
+.recent-activity-item-comment::before {
   display: inline-block;
 }
 
@@ -1492,7 +1493,7 @@ ul {
   border: none;
 }
 
-.article-list-item:hover, .split-button button.article-list-item:hover {
+.article-list-item:hover {
   background-color: #fbf5fd;
   transition: 0.25s;
 }
@@ -1660,7 +1661,8 @@ ul {
   margin: 20px 0 20px 20px;
 }
 
-[dir="rtl"] .article-body ul, [dir="rtl"] .article-body ol {
+[dir="rtl"] .article-body ul, [dir="rtl"]
+.article-body ol {
   padding-right: 20px;
   padding-left: 0;
   margin-left: 0;
@@ -1682,23 +1684,6 @@ ul {
 
 .article-body a:visited {
   color: darken(#8a4baf, 20%);
-}
-
-.article-body code {
-  background: darken(#fff, 3%);
-  border: 1px solid #ddd;
-  border-radius: 3px;
-  padding: 0 5px;
-  margin: 0 2px;
-}
-
-.article-body pre {
-  background: darken(#fff, 3%);
-  border: 1px solid #ddd;
-  border-radius: 3px;
-  padding: 10px 15px;
-  overflow: auto;
-  white-space: pre;
 }
 
 .article-body blockquote {
@@ -1746,7 +1731,7 @@ ul {
   font-weight: 300;
 }
 
-.article-comment-count:hover, .split-button button.article-comment-count:hover {
+.article-comment-count:hover {
   text-decoration: none;
 }
 
@@ -1859,7 +1844,7 @@ ul {
   padding: 10px;
 }
 
-.sidenav-item.current-article, .sidenav-item:hover, .split-button button.sidenav-item:hover {
+.sidenav-item.current-article, .sidenav-item:hover {
   background-color: #fbf5fd;
   color: #663399;
   text-decoration: none;
@@ -2145,7 +2130,8 @@ ul {
   margin: 20px 0 20px 20px;
 }
 
-[dir="rtl"] .comment-body ul, [dir="rtl"] .comment-body ol {
+[dir="rtl"] .comment-body ul, [dir="rtl"]
+.comment-body ol {
   padding-right: 20px;
   padding-left: 0;
   margin-left: 0;
@@ -2167,23 +2153,6 @@ ul {
 
 .comment-body a:visited {
   color: darken(#8a4baf, 20%);
-}
-
-.comment-body code {
-  background: darken(#fff, 3%);
-  border: 1px solid #ddd;
-  border-radius: 3px;
-  padding: 0 5px;
-  margin: 0 2px;
-}
-
-.comment-body pre {
-  background: darken(#fff, 3%);
-  border: 1px solid #ddd;
-  border-radius: 3px;
-  padding: 10px 15px;
-  overflow: auto;
-  white-space: pre;
 }
 
 .comment-body blockquote {
@@ -2224,9 +2193,8 @@ ul {
   transform: scale(1, -1);
 }
 
-.vote-up:hover, .split-button button.vote-up:hover,
-.vote-down:hover,
-.split-button button.vote-down:hover {
+.vote-up:hover,
+.vote-down:hover {
   color: #663399;
 }
 
@@ -2249,7 +2217,7 @@ ul {
   color: #663399;
 }
 
-.vote-voted:hover, .split-button button.vote-voted:hover {
+.vote-voted:hover {
   color: darken(#663399, 20%);
 }
 
@@ -2470,7 +2438,7 @@ ul {
   margin-right: 5px;
 }
 
-.striped-list-title:hover, .split-button button.striped-list-title:hover, .striped-list-title:focus, .striped-list-title:active {
+.striped-list-title:hover, .striped-list-title:focus, .striped-list-title:active {
   text-decoration: underline;
 }
 
@@ -2542,7 +2510,7 @@ ul {
   display: inline-block;
 }
 
-.status-label:hover, .split-button button.status-label:hover, .status-label:active, .status-label:focus {
+.status-label:hover, .status-label:active, .status-label:focus {
   text-decoration: none;
 }
 
@@ -2731,7 +2699,8 @@ ul {
   margin: 20px 0 20px 20px;
 }
 
-[dir="rtl"] .post-body ul, [dir="rtl"] .post-body ol {
+[dir="rtl"] .post-body ul, [dir="rtl"]
+.post-body ol {
   padding-right: 20px;
   padding-left: 0;
   margin-left: 0;
@@ -2755,23 +2724,6 @@ ul {
   color: darken(#8a4baf, 20%);
 }
 
-.post-body code {
-  background: darken(#fff, 3%);
-  border: 1px solid #ddd;
-  border-radius: 3px;
-  padding: 0 5px;
-  margin: 0 2px;
-}
-
-.post-body pre {
-  background: darken(#fff, 3%);
-  border: 1px solid #ddd;
-  border-radius: 3px;
-  padding: 10px 15px;
-  overflow: auto;
-  white-space: pre;
-}
-
 .post-body blockquote {
   border-left: 1px solid #ddd;
   color: lighten(#36313d, 20%);
@@ -2791,7 +2743,7 @@ ul {
   font-weight: 300;
 }
 
-.post-comment-count:hover, .split-button button.post-comment-count:hover {
+.post-comment-count:hover {
   text-decoration: none;
 }
 
@@ -3001,7 +2953,7 @@ ul {
 
 @media (min-width: 768px) {
   .collapsible-nav-list li:not([aria-selected="true"]),
-.collapsible-nav-list li:not(.current) {
+  .collapsible-nav-list li:not(.current) {
     display: block;
   }
 }
@@ -3020,7 +2972,7 @@ ul {
 
 @media (min-width: 768px) {
   .collapsible-nav-list li[aria-selected="true"],
-.collapsible-nav-list li.current {
+  .collapsible-nav-list li.current {
     border-bottom: 4px solid #663399;
     order: 1;
   }
@@ -3161,7 +3113,7 @@ ul {
 
 @media (min-width: 1024px) {
   .my-activities-table th:first-child,
-.my-activities-table td:first-child {
+  .my-activities-table td:first-child {
     width: 500px;
   }
 }
@@ -4573,7 +4525,7 @@ html[lang|="zh"] .search-results-description em {
   max-width: 980px;
 }
 
-.notification-icon, .notification-inline.notification-error::before, .notification-text, .notification-dismiss {
+.notification-icon, .notification-text, .notification-dismiss {
   display: table-cell;
   vertical-align: middle;
 }
@@ -4638,7 +4590,7 @@ html[lang|="zh"] .search-results-description em {
   text-decoration: none !important;
 }
 
-.notification-dismiss:hover, .split-button button.notification-dismiss:hover {
+.notification-dismiss:hover {
   opacity: 1;
 }
 
@@ -4707,7 +4659,7 @@ html[dir="rtl"] .notification-left-aligned {
   vertical-align: middle;
 }
 
-.dropdown-toggle:hover, .split-button button.dropdown-toggle:hover {
+.dropdown-toggle:hover {
   text-decoration: none;
 }
 
@@ -4821,4 +4773,143 @@ html[dir="rtl"] .notification-left-aligned {
 
 .dropdown-chevron-icon {
   vertical-align: middle;
+}
+
+/* PrismJS 1.22.0
+https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript+graphql */
+/**
+ * prism.js tomorrow night eighties for JavaScript, CoffeeScript, CSS and HTML
+ * Based on https://github.com/chriskempson/tomorrow-theme
+ * @author Rose Pritchard
+ */
+.article {
+  /* Code blocks */
+  /* Inline code */
+}
+
+.article code {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+}
+
+.article code[class*="language-"],
+.article pre[class*="language-"] {
+  color: #36313d;
+  background: none;
+  font-weight: lighter;
+  font-size: 0.85rem;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.7;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+.article pre[class*="language-"] {
+  padding: 1em;
+  margin: 0.5em 0;
+  overflow: auto;
+}
+
+.article :not(pre) > code[class*="language-"],
+.article pre[class*="language-"] {
+  background: #fdfaf6;
+}
+
+.article :not(pre) > code {
+  background-color: #fbf2e9;
+  font-size: .9em;
+  padding: 0.1em 0.2em;
+  border-radius: 0.3em;
+  white-space: normal;
+}
+
+.article .token.comment,
+.article .token.block-comment,
+.article .token.prolog,
+.article .token.doctype,
+.article .token.cdata {
+  color: #999;
+}
+
+.article .token.punctuation {
+  color: #53450e;
+}
+
+.article .token.tag,
+.article .token.attr-name,
+.article .token.namespace,
+.article .token.deleted {
+  color: #137886;
+}
+
+.article .token.attr-name {
+  color: #b94185;
+}
+
+.article .token.function-name {
+  color: #6196cc;
+}
+
+.article .token.boolean,
+.article .token.number,
+.article .token.function {
+  color: #b94185;
+}
+
+.article .token.property,
+.article .token.class-name,
+.article .token.constant,
+.article .token.symbol {
+  color: #f8c555;
+}
+
+.article .token.selector,
+.article .token.important,
+.article .token.atrule,
+.article .token.keyword,
+.article .token.builtin {
+  color: #096fb3;
+}
+
+.article .token.string,
+.article .token.char,
+.article .token.attr-value,
+.article .token.regex,
+.article .token.variable {
+  color: #b94185;
+}
+
+.article .token.operator,
+.article .token.entity,
+.article .token.url {
+  color: #53450e;
+}
+
+.article .token.important,
+.article .token.bold {
+  font-weight: bold;
+}
+
+.article .token.italic {
+  font-style: italic;
+}
+
+.article .token.entity {
+  cursor: help;
+}
+
+.article .token.inserted {
+  color: green;
+}
+
+.article .comment {
+  border-bottom: none;
 }

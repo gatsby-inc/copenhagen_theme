@@ -85,23 +85,6 @@
     color: $visited-link-color;
   }
 
-  code {
-    background: $primary-shade;
-    border: 1px solid $border-color;
-    border-radius: 3px;
-    padding: 0 5px;
-    margin: 0 2px;
-  }
-
-  pre {
-    background: $primary-shade;
-    border: 1px solid $border-color;
-    border-radius: 3px;
-    padding: 10px 15px;
-    overflow: auto;
-    white-space: pre;
-  }
-
   blockquote {
     border-left: 1px solid $border-color;
     color: $secondary-text-color;
