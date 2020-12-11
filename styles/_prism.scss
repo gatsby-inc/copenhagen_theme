@@ -17,12 +17,8 @@ $attr-name: $string;
 $code-font: SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono,
   Courier New, monospace;
 
-
-
-
 .article {
-
-  code{
+  code {
     font-family: $code-font;
   }
 
@@ -64,7 +60,7 @@ $code-font: SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono,
   /* Inline code */
   :not(pre) > code {
     background-color: $bg-inline;
-    font-size: .9em;
+    font-size: 0.9em;
     padding: 0.1em 0.2em;
     border-radius: 0.3em;
     white-space: normal;
@@ -107,7 +103,7 @@ $code-font: SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono,
   .token.class-name,
   .token.constant,
   .token.symbol {
-    color: #f8c555;
+    color: $string;
   }
 
   .token.selector,

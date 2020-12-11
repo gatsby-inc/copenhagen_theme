@@ -4825,7 +4825,7 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
 
 .article :not(pre) > code {
   background-color: #fbf2e9;
-  font-size: .9em;
+  font-size: 0.9em;
   padding: 0.1em 0.2em;
   border-radius: 0.3em;
   white-space: normal;
@@ -4868,7 +4868,7 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
 .article .token.class-name,
 .article .token.constant,
 .article .token.symbol {
-  color: #f8c555;
+  color: #b94185;
 }
 
 .article .token.selector,
