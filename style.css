@@ -4784,7 +4784,6 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
  */
 .article {
   /* Code blocks */
-  /* Inline code */
 }
 
 .article code {
@@ -4793,6 +4792,7 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
 
 .article code[class*="language-"],
 .article pre[class*="language-"] {
+  width: 100%;
   color: #36313d;
   background: none;
   font-weight: lighter;
@@ -4814,12 +4814,33 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
 
 .article pre[class*="language-"] {
   padding: 1em;
+  padding: 1.5rem 1em;
   margin: 0.5em 0;
   overflow: auto;
+  position: relative;
+}
+
+.article pre[class*="language-"]::before {
+  background: #d9d7e0;
+  border-radius: 0px 0px 4px 4px;
+  color: #232129;
+  font-size: 0.85rem;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+  letter-spacing: 0.075em;
+  line-height: 1;
+  padding: 0.25rem 0.5rem;
+  text-align: right;
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+}
+
+.article :not(pre) {
+  /* Inline code */
 }
 
 .article :not(pre) > code[class*="language-"],
-.article pre[class*="language-"] {
+.article :not(pre) pre[class*="language-"] {
   background: #fdfaf6;
 }
 
@@ -4831,11 +4852,7 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
   white-space: normal;
 }
 
-.article .token.comment,
-.article .token.block-comment,
-.article .token.prolog,
-.article .token.doctype,
-.article .token.cdata {
+.article .token.comment, .article .token.block-comment, .article .token.prolog, .article .token.doctype, .article .token.cdata {
   color: #999;
 }
 
@@ -4843,10 +4860,7 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
   color: #53450e;
 }
 
-.article .token.tag,
-.article .token.attr-name,
-.article .token.namespace,
-.article .token.deleted {
+.article .token.tag, .article .token.attr-name, .article .token.namespace, .article .token.deleted {
   color: #137886;
 }
 
@@ -4858,43 +4872,27 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
   color: #6196cc;
 }
 
-.article .token.boolean,
-.article .token.number,
-.article .token.function {
+.article .token.boolean, .article .token.number, .article .token.function {
   color: #b94185;
 }
 
-.article .token.property,
-.article .token.class-name,
-.article .token.constant,
-.article .token.symbol {
+.article .token.property, .article .token.class-name, .article .token.constant, .article .token.symbol {
   color: #b94185;
 }
 
-.article .token.selector,
-.article .token.important,
-.article .token.atrule,
-.article .token.keyword,
-.article .token.builtin {
+.article .token.selector, .article .token.important, .article .token.atrule, .article .token.keyword, .article .token.builtin {
   color: #096fb3;
 }
 
-.article .token.string,
-.article .token.char,
-.article .token.attr-value,
-.article .token.regex,
-.article .token.variable {
+.article .token.string, .article .token.char, .article .token.attr-value, .article .token.regex, .article .token.variable {
   color: #b94185;
 }
 
-.article .token.operator,
-.article .token.entity,
-.article .token.url {
+.article .token.operator, .article .token.entity, .article .token.url {
   color: #53450e;
 }
 
-.article .token.important,
-.article .token.bold {
+.article .token.important, .article .token.bold {
   font-weight: bold;
 }
 
@@ -4912,4 +4910,101 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
 
 .article .comment {
   border-bottom: none;
+}
+
+.article div.code-toolbar {
+  position: relative;
+  /* Separate line b/c rules are thrown out if selector is invalid.
+     IE11 and old Edge versions don't support :focus-within. */
+}
+
+.article div.code-toolbar:focus-within > .toolbar {
+  opacity: 1;
+}
+
+.article div.code-toolbar > .toolbar {
+  position: absolute;
+  top: 0.25rem;
+  right: 0.25rem;
+}
+
+.article div.code-toolbar > .toolbar a {
+  cursor: pointer;
+}
+
+.article div.code-toolbar > .toolbar button {
+  background: none;
+  border: 0;
+  color: #635e69;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+  -webkit-user-select: none;
+  /* for button */
+  -moz-user-select: none;
+  -ms-user-select: none;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+}
+
+.article div.code-toolbar > .toolbar button:hover {
+  color: #ffffff;
+  background-color: #663399;
+}
+
+.article div.code-toolbar > .toolbar a,
+.article div.code-toolbar > .toolbar button,
+.article div.code-toolbar > .toolbar span {
+  font-size: 0.8em;
+  padding: 0.5em;
+  background-color: none;
+  border-radius: 4px;
+}
+
+.article div.code-toolbar > .toolbar a:hover, .article div.code-toolbar > .toolbar a:focus,
+.article div.code-toolbar > .toolbar button:hover,
+.article div.code-toolbar > .toolbar button:focus,
+.article div.code-toolbar > .toolbar span:hover,
+.article div.code-toolbar > .toolbar span:focus {
+  text-decoration: none;
+  box-shadow: rgba(46, 41, 51, 0.08) 0px 1px 2px, rgba(71, 63, 79, 0.08) 0px 2px 4px;
+}
+
+.article div.code-toolbar > .toolbar .toolbar-item {
+  display: inline-block;
+}
+
+.article pre[class*="language-jsx"]::before {
+  content: "jsx";
+  background: #61dafb none repeat scroll 0% 0%;
+}
+
+.article pre[class*="language-shell"]::before {
+  content: "shell";
+  background: #d9d7e0 none repeat scroll 0% 0%;
+}
+
+.article pre[class*="language-javascript"]::before {
+  content: "js";
+  background: #f7df1e none repeat scroll 0% 0%;
+}
+
+.article pre[class*="language-graphql"]::before {
+  content: "graphql";
+  background: #e535ab none repeat scroll 0% 0%;
+}
+
+.article pre[class*="language-json"]::before {
+  content: "json";
+  background: #d9d7e0 none repeat scroll 0% 0%;
+}
+
+.article pre[class*="language-toml"]::before {
+  content: "toml";
+  background: #d9d7e0 none repeat scroll 0% 0%;
+}
+
+.article pre[class*="language-yaml"]::before {
+  content: "yaml";
+  background: #d9d7e0 none repeat scroll 0% 0%;
 }
