@@ -10,20 +10,25 @@ $bg-inline: #fbf2e9;
 $keyword: #096fb3;
 $plain: #36313d;
 $string: #b94185;
-$function: $string;
 $punctuation: #53450e;
 $tag: #137886;
 $attr-name: $string;
 $code-font: SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono,
   Courier New, monospace;
+$btn-hov: #663399;
+$copy-btn-text: #635e69;
+$copy-btn-text-hov: #ffffff;
+$code-title-color: #866c5b;
+$code-title-border: #faede5;
 
 .article {
   code {
     font-family: $code-font;
   }
 
-  code[class*="language-"],
-  pre[class*="language-"] {
+  code[class*='language-'],
+  pre[class*='language-'] {
+    width: 100%;
     color: $plain;
     background: none;
     font-weight: lighter;
@@ -46,105 +51,238 @@ $code-font: SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono,
   }
 
   /* Code blocks */
-  pre[class*="language-"] {
-    padding: 1em;
+  pre[class*='language-'] {
+    padding: 2rem 1.25rem;
+    padding-bottom: 1.5rem;
     margin: 0.5em 0;
     overflow: auto;
+    position: relative;
+
+    // Language Label
+    &::before {
+      background: #d9d7e0;
+      border-radius: 0px 0px 4px 4px;
+      color: #232129;
+      font-size: 0.85rem;
+      font-family: $code-font;
+      letter-spacing: 0.075em;
+      line-height: 1;
+      padding: 0.25rem 0.5rem;
+      text-align: right;
+      text-transform: uppercase;
+      position: absolute;
+      top: 0;
+    }
   }
 
-  :not(pre) > code[class*="language-"],
-  pre[class*="language-"] {
-    background: $background;
+  :not(pre) {
+    & > code[class*='language-'],
+    pre[class*='language-'] {
+      background: $background;
+    }
+
+    /* Inline code */
+    & > code {
+      background-color: $bg-inline;
+      font-size: 0.9em;
+      padding: 0.1em 0.2em;
+      border-radius: 0.3em;
+      white-space: normal;
+    }
   }
 
-  /* Inline code */
-  :not(pre) > code {
-    background-color: $bg-inline;
-    font-size: 0.9em;
-    padding: 0.1em 0.2em;
-    border-radius: 0.3em;
-    white-space: normal;
-  }
+  .token {
+    &.comment,
+    &.block-comment,
+    &.prolog,
+    &.doctype,
+    &.cdata {
+      color: #999;
+    }
 
-  .token.comment,
-  .token.block-comment,
-  .token.prolog,
-  .token.doctype,
-  .token.cdata {
-    color: #999;
-  }
+    &.punctuation {
+      color: $punctuation;
+    }
 
-  .token.punctuation {
-    color: $punctuation;
-  }
+    &.tag,
+    &.attr-name,
+    &.namespace,
+    &.deleted {
+      color: $tag;
+    }
 
-  .token.tag,
-  .token.attr-name,
-  .token.namespace,
-  .token.deleted {
-    color: $tag;
-  }
+    &.attr-name {
+      color: $attr-name;
+    }
 
-  .token.attr-name {
-    color: $attr-name;
-  }
+    &.function-name {
+      color: #6196cc;
+    }
 
-  .token.function-name {
-    color: #6196cc;
-  }
+    &.boolean,
+    &.number,
+    &.function {
+      color: $string;
+    }
 
-  .token.boolean,
-  .token.number,
-  .token.function {
-    color: $function;
-  }
+    &.property,
+    &.class-name,
+    &.constant,
+    &.symbol {
+      color: $string;
+    }
 
-  .token.property,
-  .token.class-name,
-  .token.constant,
-  .token.symbol {
-    color: $string;
-  }
+    &.selector,
+    &.important,
+    &.atrule,
+    &.keyword,
+    &.builtin {
+      color: #096fb3;
+    }
 
-  .token.selector,
-  .token.important,
-  .token.atrule,
-  .token.keyword,
-  .token.builtin {
-    color: #096fb3;
-  }
+    &.string,
+    &.char,
+    &.attr-value,
+    &.regex,
+    &.variable {
+      color: $string;
+    }
 
-  .token.string,
-  .token.char,
-  .token.attr-value,
-  .token.regex,
-  .token.variable {
-    color: $string;
-  }
+    &.operator,
+    &.entity,
+    &.url {
+      color: $punctuation;
+    }
 
-  .token.operator,
-  .token.entity,
-  .token.url {
-    color: $punctuation;
-  }
+    &.important,
+    &.bold {
+      font-weight: bold;
+    }
+    &.italic {
+      font-style: italic;
+    }
 
-  .token.important,
-  .token.bold {
-    font-weight: bold;
-  }
-  .token.italic {
-    font-style: italic;
-  }
+    &.entity {
+      cursor: help;
+    }
 
-  .token.entity {
-    cursor: help;
-  }
-
-  .token.inserted {
-    color: green;
+    &.inserted {
+      color: green;
+    }
   }
 
   .comment {
     border-bottom: none;
+  }
+
+  // Toolbar
+  div.code-toolbar {
+    position: relative;
+
+    &.has-title > pre {
+      margin-top: 0;
+    }
+
+    /* Separate line b/c rules are thrown out if selector is invalid.
+     IE11 and old Edge versions don't support :focus-within. */
+    &:focus-within > .toolbar {
+      opacity: 1;
+    }
+
+    & > .toolbar {
+      position: absolute;
+      top: 0.25rem;
+      right: 0.25rem;
+
+      a {
+        cursor: pointer;
+      }
+
+      // Copy Button
+      button {
+        background: none;
+        border: 0;
+        color: $copy-btn-text;
+        font: inherit;
+        line-height: normal;
+        overflow: visible;
+        padding: 0;
+        -webkit-user-select: none; /* for button */
+        -moz-user-select: none;
+        -ms-user-select: none;
+
+        transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+
+        &:hover {
+          color: $copy-btn-text-hov;
+          background-color: $btn-hov;
+        }
+      }
+
+      a,
+      button,
+      span {
+        font-size: 0.8em;
+        padding: 0.5em;
+        background-color: none;
+
+        border-radius: 4px;
+
+        &:hover,
+        &:focus {
+          text-decoration: none;
+          box-shadow: rgba(46, 41, 51, 0.08) 0px 1px 2px,
+            rgba(71, 63, 79, 0.08) 0px 2px 4px;
+        }
+      }
+
+      .toolbar-item {
+        display: inline-block;
+      }
+    }
+  }
+
+  div.code-title {
+    color: $code-title-color;
+    background-color: $background;
+    padding: 1rem 1.25rem;
+    margin-bottom: 0;
+    border-bottom: 1px solid $code-title-border;
+  }
+
+  // Language labels
+  $languages: (
+    'jsx': (
+      'color': rgb(97, 218, 251),
+    ),
+    'shell': (),
+    'javascript': (
+      'color': #f7df1e,
+      'label': 'javascript',
+    ),
+    'graphql': (
+      'color': #e535ab,
+    ),
+    'json': (),
+    'toml': (),
+    'yaml': (),
+  );
+
+  @each $lang, $props in $languages {
+    $color: map-get($props, 'color');
+    $label: map-get($props, 'label');
+
+    @if $label == null {
+      $label: $lang;
+    }
+
+    @if $color == null {
+      $color: #d9d7e0;
+    }
+
+    pre[class*='language-#{$lang}']::before {
+      content: $label;
+      background: $color none repeat scroll 0% 0%;
+    }
   }
 }
