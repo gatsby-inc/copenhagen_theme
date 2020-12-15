@@ -18,14 +18,16 @@ $code-font: SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono,
 $btn-hov: #663399;
 $copy-btn-text: #635e69;
 $copy-btn-text-hov: #ffffff;
+$code-title-color: #866c5b;
+$code-title-border: #faede5;
 
 .article {
   code {
     font-family: $code-font;
   }
 
-  code[class*="language-"],
-  pre[class*="language-"] {
+  code[class*='language-'],
+  pre[class*='language-'] {
     width: 100%;
     color: $plain;
     background: none;
@@ -49,9 +51,9 @@ $copy-btn-text-hov: #ffffff;
   }
 
   /* Code blocks */
-  pre[class*="language-"] {
-    padding: 1em;
-    padding: 1.5rem 1em;
+  pre[class*='language-'] {
+    padding: 2rem 1.25rem;
+    padding-bottom: 1.5rem;
     margin: 0.5em 0;
     overflow: auto;
     position: relative;
@@ -74,8 +76,8 @@ $copy-btn-text-hov: #ffffff;
   }
 
   :not(pre) {
-    & > code[class*="language-"],
-    pre[class*="language-"] {
+    & > code[class*='language-'],
+    pre[class*='language-'] {
       background: $background;
     }
 
@@ -177,6 +179,10 @@ $copy-btn-text-hov: #ffffff;
   div.code-toolbar {
     position: relative;
 
+    &.has-title > pre {
+      margin-top: 0;
+    }
+
     /* Separate line b/c rules are thrown out if selector is invalid.
      IE11 and old Edge versions don't support :focus-within. */
     &:focus-within > .toolbar {
@@ -236,27 +242,35 @@ $copy-btn-text-hov: #ffffff;
     }
   }
 
+  div.code-title {
+    color: $code-title-color;
+    background-color: $background;
+    padding: 1rem 1.25rem;
+    margin-bottom: 0;
+    border-bottom: 1px solid $code-title-border;
+  }
+
   // Language labels
   $languages: (
-    "jsx": (
-      "color": rgb(97, 218, 251),
+    'jsx': (
+      'color': rgb(97, 218, 251),
     ),
-    "shell": (),
-    "javascript": (
-      "color": #f7df1e,
-      "label": "js",
+    'shell': (),
+    'javascript': (
+      'color': #f7df1e,
+      'label': 'javascript',
     ),
-    "graphql": (
-      "color": #e535ab,
+    'graphql': (
+      'color': #e535ab,
     ),
-    "json": (),
-    "toml": (),
-    "yaml": (),
+    'json': (),
+    'toml': (),
+    'yaml': (),
   );
 
   @each $lang, $props in $languages {
-    $color: map-get($props, "color");
-    $label: map-get($props, "label");
+    $color: map-get($props, 'color');
+    $label: map-get($props, 'label');
 
     @if $label == null {
       $label: $lang;
@@ -266,7 +280,7 @@ $copy-btn-text-hov: #ffffff;
       $color: #d9d7e0;
     }
 
-    pre[class*="language-#{$lang}"]::before {
+    pre[class*='language-#{$lang}']::before {
       content: $label;
       background: $color none repeat scroll 0% 0%;
     }
