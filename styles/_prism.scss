@@ -20,6 +20,7 @@ $copy-btn-text: #635e69;
 $copy-btn-text-hov: #ffffff;
 $code-title-color: #866c5b;
 $code-title-border: #faede5;
+$property: #137886;
 
 .article {
   code {
@@ -129,7 +130,7 @@ $code-title-border: #faede5;
     &.class-name,
     &.constant,
     &.symbol {
-      color: $string;
+      color: $property;
     }
 
     &.selector,
